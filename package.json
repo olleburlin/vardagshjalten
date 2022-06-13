@@ -5,6 +5,8 @@
   "version": "0.3.0",
   "author": "Kostas Vrouvas <hello@kosvrouvas.com>",
   "dependencies": {
+    "@headlessui/react": "^1.6.4",
+    "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.4",
     "gatsby": "^4.11.2",
     "gatsby-plugin-google-analytics": "^4.0.0",
@@ -16,7 +18,9 @@
     "gatsby-plugin-react-helmet": "^5.5.0",
     "gatsby-plugin-sharp": "^4.11.1",
     "gatsby-source-filesystem": "^4.5.2",
+    "gatsby-source-wordpress": "^6.16.1",
     "gatsby-transformer-sharp": "^4.5.0",
+    "hamburger-react": "^2.5.0",
     "postcss": "^8.4.5",
     "prop-types": "^15.7.2",
     "react": "^18.0.0",

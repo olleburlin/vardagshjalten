@@ -1,50 +1,24 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import * as React from "react"
+import HeaderBar from "./common/HeaderBar"
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+function Layout({ children, isHome }) {
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+    <div className="md:min-h-screen antialiased relative  leading-relaxed text-gray-900">
+      <div className="flex flex-col md:flex-row md:h-full w-full relative">
+        <div
+          className={`${
+            isHome ? "absolute" : "static"
+          }  md:fixed md:top-0 md:left-0 z-20 w-full md:w-24 md:h-screen`}
+        >
+          <HeaderBar />
+        </div>
+        <div className="h-full w-full relative md:ml-24">
+          <main className="h-full w-full">{children}</main>
+        </div>
       </div>
-    </>
+      <div>Footer</div>
+    </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
