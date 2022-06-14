@@ -7,7 +7,7 @@ export default function Button({ text, theme, url }) {
       <div
         className={`${
           theme === "light" ? "bg-white text-primary" : "bg-primary text-white"
-        } text-xl px-4 py-3 rounded-md`}
+        } text-2xl px-4 py-3 rounded-md`}
       >
         {text}
       </div>

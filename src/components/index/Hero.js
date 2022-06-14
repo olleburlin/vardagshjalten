@@ -11,7 +11,7 @@ export default function Hero() {
           bilder {
             bild {
               localFile {
-                childrenImageSharp {
+                childImageSharp {
                   gatsbyImageData(formats: JPG, layout: CONSTRAINED)
                 }
               }
@@ -21,14 +21,13 @@ export default function Hero() {
       }
     }
   `)
+  const img = data.wpPage.bildspel.bilder[0].bild.localFile.childImageSharp
+
   return (
     <div className="md:h-screen">
       <div className="h-full overflow-hidden relative">
         <div className="absolute h-full w-full bg-black">
-          <StaticImage
-            src="../../images/disk.jpg"
-            class="h-full w-full opacity-60"
-          />
+          <GatsbyImage image={getImage(img)} class="h-full w-full opacity-60" />
         </div>
         <div className="relative w-full h-full inset-x-0 flex items-center justify-start">
           <div className="ml-24 text-white space-y-4">

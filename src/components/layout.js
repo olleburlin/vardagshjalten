@@ -16,7 +16,6 @@ function Layout({ children, isHome }) {
           <main className="h-full w-full">{children}</main>
         </div>
       </div>
-      <div>Footer</div>
     </div>
   )
 }
