@@ -1,0 +1,99 @@
+import React from "react"
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
+import Link from "../common/Link"
+
+export default function ServicesListPage() {
+  const data = useStaticQuery(graphql`
+    {
+      allWpTjanst {
+        nodes {
+          title
+          grundinfo {
+            ingressFramsidaTjanst
+            kompletterandeInformationFramsida
+          }
+          featuredImage {
+            node {
+              localFile {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  const services = data.allWpTjanst.nodes
+
+  return (
+    <div className="min-h-screen  flex flex-col items-center justify-start">
+      <div className="relative bg-secondary">
+        <StaticImage
+          src="../../images/disk.jpg"
+          className="h-screen/3 md:h-screen/2 opacity-50 h-[40vh]"
+        />
+        <div className="absolute top-0 w-full h-full flex flex-col justify-center ">
+          <div className="px-4 md:px-24 max-w-screen-2xl mx-auto w-full">
+            <h1 className="inline-block text-white ">Tjänster</h1>
+          </div>
+        </div>
+      </div>
+      <div className="relative px-4 md:px-24 max-w-screen-2xl w-full space-y-8 md:space-y-16 py-8 md:py-16">
+        <div className="bg-secondary/10 p-4 md:p-8">
+          <div>
+            <p>
+              Vi värnar om ditt hem eller era lokaler och hjälper er på bästa
+              sätt för att resultatet ska bli skinande rent och hemtrevligt. Vi
+              har noggrant utvald personal som kommer gå på djupet och se till
+              att det blir ett riktigt nöje att komma in till ert nystädade hem
+              eller kontor.
+            </p>
+
+            <p>
+              Nedanför kan du se de olika sorters städtjänster som vi erbjuder.
+              Vi har både engångsuppdrag och löpande tjänster.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-4 md:gap-8 ">
+          {services.map((service, i) => {
+            return <SingleServiceItem key={i} service={service} />
+          })}
+        </div>
+      </div>
+    </div>
+  )
+}
+function SingleServiceItem({ service }) {
+  const { title, featuredImage, uri } = service
+
+  const image = featuredImage?.node.localFile.childImageSharp
+
+  return (
+    <div className="flex flex-col md:gap-4 border-b-2 last:border-0 border-secondary/50 md:border-0 pb-4">
+      <div className="hidden md:block">
+        {" "}
+        <Link to={uri}>
+          <GatsbyImage image={getImage(image)} alt={title} className="" />
+        </Link>
+      </div>
+      <div className=" flex flex-col space-y-2">
+        <div className="font-bold text-2xl tracking-tight ">
+          <Link to={uri}>{title}</Link>
+        </div>
+        <div className="">Text</div>
+      </div>
+      <div className="font-bold  tracking-tight ">
+        <Link to={uri}>
+          <span className="underline underline-offset-2 decoration-primary decoration-2  hover:text-primary  transition-all">
+            Läs mer
+          </span>
+        </Link>
+      </div>
+    </div>
+  )
+}
