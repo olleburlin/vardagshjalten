@@ -8,7 +8,7 @@ import LoggaMono from "./LoggaMono"
 export default function HeaderBar() {
   const [isOpen, setOpen] = useState(false)
   return (
-    <div className="bg-black text-white md:h-screen flex flex-row md:flex-col justify-between items-center p-4 md:p-0">
+    <div className="bg-secondary text-white md:h-screen flex flex-row md:flex-col justify-between items-center p-4 md:p-0">
       <div className="relative md:pt-8 ">
         <>
           <div className="z-30 relative">

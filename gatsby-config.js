@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Vardagshjälten`,
-    description: `Vardagshjälten är en blogg för att diskutera vardagshjälten.`,
+    description: `Räddar din dag. Städning med nöjd-kund-garanti`,
     author: `@olleburlin`,
   },
   flags: {
