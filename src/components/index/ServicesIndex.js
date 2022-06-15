@@ -50,9 +50,11 @@ function Service({ service, oddEven }) {
 
   return (
     <div>
-      <div className="grid md:grid-cols-4 gap-8 p-4 md:p-8 items-center">
+      <div className="grid md:grid-cols-4 gap-16 p-4 md:p-8 items-center">
         <div className={`${oddEven % 2 ? "md:order-last" : ""} col-span-2`}>
-          <GatsbyImage image={getImage(img)} className="" />
+          <div className="bg-secondary">
+            <GatsbyImage image={getImage(img)} className="" />
+          </div>
         </div>
         <div className="col-span-2">
           <div className="flex h-full flex-col justify-center gap-4 text-secondary">

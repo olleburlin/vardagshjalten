@@ -25,6 +25,15 @@ export const query = graphql`
       grundinfo {
         information
       }
+      featuredImage {
+        node {
+          localFile {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
       innefattar {
         listor {
           punkter {

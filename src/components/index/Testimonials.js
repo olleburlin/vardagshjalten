@@ -1,6 +1,7 @@
 import React from "react"
-import SectionHeader from "./SectionHeader"
+
 import { useStaticQuery, graphql } from "gatsby"
+import SectionHeader from "../common/SectionHeader"
 
 export default function Testimonials() {
   const data = useStaticQuery(graphql`

@@ -3,7 +3,7 @@ import HeaderBar from "./common/HeaderBar"
 
 function Layout({ children, isHome }) {
   return (
-    <div className="md:min-h-screen antialiased relative  leading-relaxed text-gray-900">
+    <div className="md:min-h-screen antialiased relative  leading-relaxed text-secondary">
       <div className="flex flex-col md:flex-row md:h-full w-full relative">
         <div
           className={`${
