@@ -1,6 +1,6 @@
 import * as React from "react"
 import HeaderBar from "./common/HeaderBar"
-
+import Footer from "./common/Footer"
 function Layout({ children, isHome }) {
   return (
     <div className="md:min-h-screen antialiased relative  leading-relaxed text-secondary">
@@ -14,8 +14,10 @@ function Layout({ children, isHome }) {
         </div>
         <div className="h-full w-full relative md:ml-24">
           <main className="h-full w-full">{children}</main>
+          <Footer />
         </div>
       </div>
+      <footer></footer>
     </div>
   )
 }
