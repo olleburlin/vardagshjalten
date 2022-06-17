@@ -29,7 +29,7 @@ export default function ServicesIndex() {
   const services = data.allWpTjanst.nodes
   return (
     <div className="bg-gradient-to-b from-primary/10 to-primary/40">
-      <div className="container px-4 md:px-8 mx-auto py-16 grid gap-4 md:gap-8 max-w-7xl">
+      <div className="container px-4 md:px-8 mx-auto py-16 grid gap-4 md:gap-16 ">
         <div>
           {services.map((service, i) => {
             return <Service key={i} oddEven={i} service={service} />

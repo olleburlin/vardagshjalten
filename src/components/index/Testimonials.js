@@ -25,7 +25,7 @@ export default function Testimonials() {
         <div>
           <SectionHeader text="Referenser" theme="light" />
         </div>
-        <div className="grid md:grid-cols-3 gap-12 md:gap-24 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-12 md:gap-24 ">
           {quotes.map((quote, i) => {
             return <Quote key={i} quote={quote} />
           })}
