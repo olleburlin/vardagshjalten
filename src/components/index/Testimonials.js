@@ -25,7 +25,7 @@ export default function Testimonials() {
         <div>
           <SectionHeader text="Referenser" theme="light" />
         </div>
-        <div className="grid md:grid-cols-3 gap-4 md:gap-16">
+        <div className="grid md:grid-cols-3 gap-12 md:gap-24 max-w-6xl mx-auto">
           {quotes.map((quote, i) => {
             return <Quote key={i} quote={quote} />
           })}
@@ -38,7 +38,7 @@ export default function Testimonials() {
 function Quote({ quote }) {
   const { avsandare, textCitat } = quote
   return (
-    <div className="flex flex-col gap-4 text-2xl">
+    <div className="flex flex-col gap-4 text-lg">
       <div>{textCitat}</div>
       <div className="font-bold">{avsandare}</div>
     </div>
