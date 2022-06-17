@@ -102,7 +102,7 @@ export default function ContactForm() {
         </div>
 
         <div className="form-group">
-          <button className="px-3 py-2 bg-primary text-white font-medium">
+          <button className="px-3 py-2 bg-primary text-white font-medium rounded-md">
             Skicka
           </button>
         </div>
