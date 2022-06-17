@@ -8,45 +8,74 @@ export default function ContactForm() {
           <div className="form-group">
             <label htmlFor="Namn">
               Namn*
-              <input type="text" name="Namn" required />
+              <input
+                type="text"
+                name="Namn"
+                required
+                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
+              />
             </label>
           </div>
           <div className="form-group">
             <label htmlFor="Email">
               Email*
-              <input type="email" name="Email" required />
+              <input
+                type="email"
+                name="Email"
+                required
+                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
+              />
             </label>
           </div>
           <div className="form-group">
             <label htmlFor="Telefon">
               Telefon
-              <input type="text" name="Telefon" />
+              <input
+                type="text"
+                name="Telefon"
+                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
+              />
             </label>
           </div>
           <div className="form-group">
             <label htmlFor="Ort">
               Ort
-              <input type="text" name="Ort" />
+              <input
+                type="text"
+                name="Ort"
+                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
+              />
             </label>
           </div>
           <div className="form-group">
             <label htmlFor="Adress">
               Adress
-              <input type="text" name="Adress" />
+              <input
+                type="text"
+                name="Adress"
+                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
+              />
             </label>
           </div>
 
           <div className="form-group">
             <label htmlFor="Kvm">
               Antal Kvm
-              <input type="number" name="Kvm" />
+              <input
+                type="number"
+                name="Kvm"
+                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
+              />
             </label>
           </div>
 
           <div className="form-group">
             <label htmlFor="Mötestyp">
               Mötestyp
-              <select name="Mötestyp" className="appearance-none">
+              <select
+                name="Mötestyp"
+                className="bg-secondary/10 block mt-2 w-full p-4 text-black appearance-none"
+              >
                 <option value="">--Välj--</option>
                 <option value="Hembesök (trad. Fysiskt möte)">
                   Hembesök (trad. Fysiskt möte)

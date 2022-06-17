@@ -21,6 +21,9 @@ h4 {
   @apply space-y-4;
 }
 
+@tailwind components;
+@tailwind utilities;
+/* 
 .form label {
   @apply flex flex-col;
 }
@@ -48,7 +51,7 @@ h4 {
 .form input[type="email"],
 .form select,
 .form textarea {
-  @apply bg-secondary/10;
+  @apply bg-secondary/10 !important;
 }
 
 .form textarea {
@@ -63,7 +66,4 @@ h4 {
 }
 .form button:hover {
   @apply bg-opacity-80 transition-all;
-}
-
-@tailwind components;
-@tailwind utilities;
+} */
