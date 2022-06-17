@@ -21,8 +21,6 @@ h4 {
   @apply space-y-4;
 }
 
-/* Forms */
-
 .form label {
   @apply flex flex-col;
 }
@@ -66,8 +64,6 @@ h4 {
 .form button:hover {
   @apply bg-opacity-80 transition-all;
 }
-
-/* /Forms */
 
 @tailwind components;
 @tailwind utilities;
