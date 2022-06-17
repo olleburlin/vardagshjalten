@@ -27,7 +27,11 @@ export default function Hero() {
     <div className="md:h-screen">
       <div className="h-full overflow-hidden relative">
         <div className="absolute h-full w-full bg-black">
-          <GatsbyImage image={getImage(img)} class="h-full w-full opacity-60" />
+          <GatsbyImage
+            image={getImage(img)}
+            class="h-full w-full opacity-60"
+            alt="Hero Image"
+          />
         </div>
         <div className="relative w-full h-full inset-x-0 flex items-center justify-start">
           <div className="ml-24 text-white space-y-4">
@@ -39,8 +43,8 @@ export default function Hero() {
               <br /> för hem, lokal eller flytt.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
-              <Button text="Boka möte" theme="light" url="/" />
-              <Button text="Våra tjänster" theme="dark" url="/" />
+              <Button text="Boka möte" theme="light" url="/boka" />
+              <Button text="Våra tjänster" theme="dark" url="/tjanster" />
             </div>
           </div>
         </div>

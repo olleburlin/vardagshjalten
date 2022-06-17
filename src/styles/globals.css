@@ -21,5 +21,53 @@ h4 {
   @apply space-y-4;
 }
 
+/* Forms */
+
+.form label {
+  @apply flex flex-col;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="date"],
+.form input[type="number"],
+.form textarea {
+  @apply w-full p-4 text-black;
+}
+.form select {
+  @apply w-full p-5;
+}
+.form select:after {
+  @apply right-4 relative;
+}
+.form input,
+.form select {
+  @apply block mt-2;
+}
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="textarea"],
+.form input[type="number"],
+.form input[type="email"],
+.form select,
+.form textarea {
+  @apply bg-secondary/10;
+}
+
+.form textarea {
+  @apply block mt-2;
+}
+.form div {
+  @apply mb-4;
+}
+
+.form button {
+  @apply px-3 py-2 bg-primary text-white font-medium;
+}
+.form button:hover {
+  @apply bg-opacity-80 transition-all;
+}
+
+/* /Forms */
+
 @tailwind components;
 @tailwind utilities;

@@ -17,7 +17,7 @@ export default function ServicesListPage() {
             node {
               localFile {
                 childImageSharp {
-                  gatsbyImageData
+                  gatsbyImageData(aspectRatio: 1.5)
                 }
               }
             }
@@ -37,13 +37,15 @@ export default function ServicesListPage() {
         />
         <div className="absolute top-0 w-full h-full flex flex-col justify-center ">
           <div className="px-4 md:px-24 max-w-screen-2xl mx-auto w-full">
-            <h1 className="inline-block text-white ">Tjänster</h1>
+            <h1 className="text-center text-5xl text-white font-bold underline decoration-8 decoration-primary">
+              Tjänster
+            </h1>
           </div>
         </div>
       </div>
       <div className="relative px-4 md:px-24 max-w-screen-2xl w-full space-y-8 md:space-y-16 py-8 md:py-16">
-        <div className="bg-secondary/10 p-4 md:p-8">
-          <div>
+        <div className=" pl-8 max-w-4xl mx-auto py-8">
+          <div className="text-xl space-y-4">
             <p>
               Vi värnar om ditt hem eller era lokaler och hjälper er på bästa
               sätt för att resultatet ska bli skinande rent och hemtrevligt. Vi
@@ -59,7 +61,7 @@ export default function ServicesListPage() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 md:gap-8 ">
+        <div className="grid md:grid-cols-4 gap-4 md:gap-8 ">
           {services.map((service, i) => {
             return <SingleServiceItem key={i} service={service} />
           })}
@@ -85,7 +87,7 @@ function SingleServiceItem({ service }) {
         <div className="font-bold text-2xl tracking-tight ">
           <Link to={uri}>{title}</Link>
         </div>
-        <div className="">Text</div>
+        {/* <div className="">Text</div> */}
       </div>
       <div className="font-bold  tracking-tight ">
         <Link to={uri}>

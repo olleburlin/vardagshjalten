@@ -17,7 +17,7 @@ function SocialLinks({ fill }) {
       ].map(link => (
         <SocialIcon
           className="block text-white md:inline-block w-2"
-          key={link.title}
+          key={link.url}
           url={link.url}
           fgColor={fill}
           bgColor="transparent"
