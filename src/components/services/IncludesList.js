@@ -3,10 +3,14 @@ import React from "react"
 export default function IncludesList({ listor }) {
   const lists = listor
   return (
-    <div className="grid md:grid-cols-2 gap-4 md:gap-8">
-      {lists.map((list, i) => {
-        return <IncludesListItem key={i} list={list} />
-      })}
+    <div>
+      {lists && (
+        <div className="grid md:grid-cols-2 gap-4 md:gap-8">
+          {lists?.map((list, i) => {
+            return <IncludesListItem key={i} list={list} />
+          })}
+        </div>
+      )}
     </div>
   )
 }

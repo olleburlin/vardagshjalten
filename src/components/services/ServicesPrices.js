@@ -7,11 +7,13 @@ export default function ServicesPrices({ prices }) {
   return (
     <div className="space-y-2 text-lg">
       <h3 className="">Priser</h3>
-      <div className=" divide-y divide-primary">
-        {pricePoints.map((pricePoint, i) => {
-          return <PricePoint key={i} pricePoint={pricePoint} />
-        })}
-      </div>
+      {pricePoints && (
+        <div className=" divide-y divide-primary">
+          {pricePoints.map((pricePoint, i) => {
+            return <PricePoint key={i} pricePoint={pricePoint} />
+          })}
+        </div>
+      )}
       <div>
         <div
           className="space-y-2 text-sm"

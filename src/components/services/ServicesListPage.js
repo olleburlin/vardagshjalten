@@ -9,6 +9,7 @@ export default function ServicesListPage() {
       allWpTjanst {
         nodes {
           title
+          uri
           grundinfo {
             ingressFramsidaTjanst
             kompletterandeInformationFramsida
