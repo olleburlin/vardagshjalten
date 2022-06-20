@@ -21,7 +21,7 @@ function SocialLinks({ fill }) {
           url={link.url}
           fgColor={fill}
           bgColor="transparent"
-          style={{ height: 40, width: 40 }}
+          style={{ height: 50, width: 50 }}
           target="_blank"
           rel="noreferrer noopener"
         >
