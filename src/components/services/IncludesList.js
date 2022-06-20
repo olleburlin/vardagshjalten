@@ -20,7 +20,7 @@ function IncludesListItem({ list }) {
   return (
     <div>
       <h4>{list.rubrikListor}</h4>
-      <ul className="list-outside list-disc pl-3">
+      <ul className="list-outside list-disc pl-4">
         {punkter.map((punkt, i) => {
           return <li key={i}>{punkt.punkt}</li>
         })}

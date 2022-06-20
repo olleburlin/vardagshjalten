@@ -45,7 +45,7 @@ export default function ServicesListPage() {
         </div>
       </div>
       <div className="relative px-4 md:px-24 max-w-screen-2xl w-full space-y-8 md:space-y-16 py-8 md:py-16">
-        <div className=" pl-8 max-w-4xl mx-auto py-8">
+        <div className="  max-w-4xl mx-auto md:py-8">
           <div className="text-xl space-y-4">
             <p>
               Vi värnar om ditt hem eller era lokaler och hjälper er på bästa
@@ -62,7 +62,7 @@ export default function ServicesListPage() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-4 md:gap-8 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8 ">
           {services.map((service, i) => {
             return <SingleServiceItem key={i} service={service} />
           })}
@@ -77,22 +77,19 @@ function SingleServiceItem({ service }) {
   const image = featuredImage?.node.localFile.childImageSharp
 
   return (
-    <div className="flex flex-col md:gap-4 border-b-2 last:border-0 border-secondary/50 md:border-0 pb-4">
-      <div className="hidden md:block">
-        {" "}
-        <Link to={uri}>
-          <GatsbyImage image={getImage(image)} alt={title} className="" />
-        </Link>
-      </div>
-      <div className=" flex flex-col space-y-2">
+    <div className="flex flex-col md:gap-2 space-y-4 md:space-y-0 md:pb-4">
+      {" "}
+      <Link to={uri}>
+        <GatsbyImage image={getImage(image)} alt={title} className="" />
+      </Link>
+      <div className=" flex flex-col">
         <div className="font-bold text-2xl tracking-tight ">
           <Link to={uri}>{title}</Link>
         </div>
-        {/* <div className="">Text</div> */}
       </div>
-      <div className="font-bold  tracking-tight ">
+      <div className="hidden font-bold  tracking-tight ">
         <Link to={uri}>
-          <span className="underline underline-offset-2 decoration-primary decoration-2  hover:text-primary  transition-all">
+          <span className=" underline underline-offset-2 decoration-primary decoration-2  hover:text-primary  transition-all">
             Läs mer
           </span>
         </Link>

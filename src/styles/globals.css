@@ -21,6 +21,13 @@ h4 {
   @apply space-y-4;
 }
 
+.wp-content blockquote {
+  @apply pl-8 border-l-4 border-primary italic text-lg;
+}
+.wp-content hr {
+  @apply border-primary/50 border-t border-b-0;
+}
+
 @tailwind components;
 @tailwind utilities;
 /* 

@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function ContactForm() {
+export default function OfferForm() {
   return (
     <div>
       <form action="/boka" className="form space-y-8">
@@ -47,51 +47,37 @@ export default function ContactForm() {
               />
             </label>
           </div>
-          <div className="form-group">
-            <label htmlFor="Adress">
-              Adress
-              <input
-                type="text"
-                name="Adress"
-                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
-              />
-            </label>
-          </div>
 
           <div className="form-group">
-            <label htmlFor="Kvm">
-              Antal Kvm
-              <input
-                type="number"
-                name="Kvm"
-                className="bg-secondary/10 block mt-2 w-full p-4 text-black"
-              />
-            </label>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="Mötestyp">
-              Mötestyp
+            <label htmlFor="Tjänst">
+              Tjänst
               <select
-                name="Mötestyp"
+                name="Tjänst"
                 className="bg-secondary/10 block mt-2 w-full p-4 text-black appearance-none"
               >
                 <option value="">--Välj--</option>
-                <option value="Hembesök (trad. Fysiskt möte)">
-                  Hembesök (trad. Fysiskt möte)
-                </option>
-                <option value="Zoommöte (vi skickar en länk till din mejl)">
-                  Zoommöte (vi skickar en länk till din mejl)
-                </option>
-                <option value="Facetime (endast för Iphone)">
-                  Facetime (endast för Iphone)
-                </option>
-                <option value="WhatsApp (kräver APP i telfonen)">
-                  WhatsApp (kräver APP i telfonen)
-                </option>
+                <option value="Hemstädning">Hemstädning</option>
+                <option value="Storstädning">Storstädning</option>
+                <option value="Flyttstädning">Flyttstädning</option>
+                <option value="Fönsterputs">Fönsterputs</option>
+                <option value="Trädgårdsarbete">Trädgårdsarbete</option>
+                <option value="Snöskottning">Snöskottning</option>
+                <option value="Fastighetsskötsel">Fastighetsskötsel</option>
+                <option value="Kontorsstäd">Kontorsstäd</option>
+                <option value="Annat">Annat</option>{" "}
               </select>
             </label>
           </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="Meddelande">
+            Meddelande
+            <textarea
+              name="Meddelande"
+              rows="4"
+              className="block bg-secondary/10 block mt-2 w-full p-4 text-black"
+            />
+          </label>
         </div>
         <div className="form-group flex flex-row gap-4 items-center md:items-end ">
           <input type="checkbox" name="Samtycke" />
