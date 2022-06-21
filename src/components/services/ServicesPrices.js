@@ -29,7 +29,7 @@ function PricePoint({ pricePoint }) {
   return (
     <div className="grid grid-cols-2 py-1">
       <div>{titel}</div>
-      <div>{timpris}kr</div>
+      <div>{timpris}</div>
     </div>
   )
 }

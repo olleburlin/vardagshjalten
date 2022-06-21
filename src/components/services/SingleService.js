@@ -1,11 +1,19 @@
 import React from "react"
 import FeaturedImagePage from "../common/FeaturedImagePage"
 import Includes from "./Includes"
+import IncludesNot from "./IncludesNot"
 import ServicesPrices from "./ServicesPrices"
 // import Link from "../common/Link"
 
 export default function SingleKurs({ page }) {
-  const { title, grundinfo, innefattar, priserTjanst, featuredImage } = page
+  const {
+    title,
+    grundinfo,
+    innefattar,
+    innefattarInte,
+    priserTjanst,
+    featuredImage,
+  } = page
   const { information } = grundinfo
   const image = featuredImage?.node.localFile.childImageSharp
 
@@ -41,10 +49,8 @@ export default function SingleKurs({ page }) {
               )}
             </div>
             <div>
-              {innefattar.listor && (
-                <div className="border-t-2 border-primary pt-4 md:pt-8">
-                  <Includes service={title} innefattar={innefattar} />
-                </div>
+              {innefattarInte.punkterInnefattarinte && (
+                <IncludesNot service={title} innefattarInte={innefattarInte} />
               )}
             </div>
           </div>
