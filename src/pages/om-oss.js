@@ -31,6 +31,7 @@ export default function OmOssPage({ data }) {
             </div>
           </div>
         </div>
+        <blockquote></blockquote>
       </div>
     </Layout>
   )

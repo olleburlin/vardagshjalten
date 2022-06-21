@@ -8,7 +8,7 @@ h1 {
   @apply text-2xl;
 }
 h2 {
-  @apply text-3xl font-bold;
+  @apply text-3xl md:text-4xl font-bold;
 }
 h3 {
   @apply text-2xl font-bold;
@@ -24,7 +24,7 @@ h5 {
   @apply space-y-4;
 }
 
-.wp-content blockquote {
+blockquote {
   @apply pl-8 border-l-4 border-primary italic text-lg;
 }
 .wp-content hr {
@@ -33,6 +33,10 @@ h5 {
 
 @tailwind components;
 @tailwind utilities;
+
+#prices a {
+  @apply underline;
+}
 /* 
 .form label {
   @apply flex flex-col;

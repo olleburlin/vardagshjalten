@@ -5,7 +5,7 @@ export default function ServicesPrices({ prices }) {
   const { extraText, prisklass } = prices
   const pricePoints = prisklass
   return (
-    <div className="space-y-2 text-lg">
+    <div id="prices" className="space-y-2 text-lg">
       <h3 className="">Priser</h3>
       {pricePoints && (
         <div className=" divide-y divide-primary">
@@ -16,7 +16,7 @@ export default function ServicesPrices({ prices }) {
       )}
       <div>
         <div
-          className="space-y-2 text-sm"
+          className="space-y-2 text-sm "
           dangerouslySetInnerHTML={{ __html: extraText }}
         />
       </div>
