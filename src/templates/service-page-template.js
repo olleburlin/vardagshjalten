@@ -43,6 +43,12 @@ export const query = graphql`
         }
         fritext
       }
+      innefattarInte {
+        fritextInnefattarinte
+        punkterInnefattarinte {
+          punktInnefattarinte
+        }
+      }
       priserTjanst {
         extraText
         prisklass {

@@ -34,14 +34,21 @@ export default function SingleKurs({ page }) {
               />
             </div>
             <div>
-              {innefattar && (
+              {innefattar.listor && (
                 <div className="border-t-2 border-primary pt-4 md:pt-8">
-                  <Includes innefattar={innefattar} />
+                  <Includes service={title} innefattar={innefattar} />
+                </div>
+              )}
+            </div>
+            <div>
+              {innefattar.listor && (
+                <div className="border-t-2 border-primary pt-4 md:pt-8">
+                  <Includes service={title} innefattar={innefattar} />
                 </div>
               )}
             </div>
           </div>
-          {priserTjanst && (
+          {priserTjanst.prisklass && (
             <div className="md:col-span-1">
               <div className="bg-primary/20 p-8">
                 <ServicesPrices prices={priserTjanst} />

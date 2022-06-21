@@ -1,5 +1,7 @@
 import React from "react"
 import Hero from "../components/index/Hero"
+
+import Partners from "../components/index/Partners"
 import SellingPoints from "../components/index/SellingPoints"
 import ServicesIndex from "../components/index/ServicesIndex"
 import Testimonials from "../components/index/Testimonials"
@@ -13,6 +15,8 @@ const IndexPage = () => (
     <ServicesIndex />
     <SellingPoints />
     <Testimonials />
+
+    <Partners />
   </Layout>
 )
 
