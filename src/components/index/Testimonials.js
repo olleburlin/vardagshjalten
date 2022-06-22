@@ -21,7 +21,7 @@ export default function Testimonials() {
   const quotes = data.wpPage.referenser.citat
   return (
     <div className="bg-secondary  text-third">
-      <div className="container mx-auto px-4 md:px-8 py-16 md:py-32 space-y-8 md:space-y-32">
+      <div className="container mx-auto px-4 md:px-8 py-16 md:py-32 space-y-8 md:space-y-16">
         <div>
           <SectionHeader text="Referenser" theme="light" />
         </div>
@@ -38,8 +38,8 @@ export default function Testimonials() {
 function Quote({ quote }) {
   const { avsandare, textCitat } = quote
   return (
-    <div className="flex flex-col gap-4 text-lg">
-      <div>{textCitat}</div>
+    <div className="flex flex-col gap-4 text-lg md:text-xl">
+      <div className="italic">{textCitat}</div>
       <div className="font-bold">{avsandare}</div>
     </div>
   )

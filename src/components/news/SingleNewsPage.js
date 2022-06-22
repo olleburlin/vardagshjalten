@@ -16,9 +16,10 @@ export default function SingleNewsPage({ post }) {
         </div>
       </div>
       <div className=" relative px-4 md:px-24 max-w-screen-2xl w-full space-y-4 md:space-y-8 py-8 md:py-16">
-        <p className="italic">Publicerad: {date}</p>
-        <div className="page-content flex flex-col md:flex-row gap-8 md:gap-16 border-secondary border-t-4">
-          <div className="w-full md:w-2/3 pt-4 md:pt-8 flex-none">
+        <div className="page-content flex flex-col md:flex-row gap-8 md:gap-16 ">
+          <div className="w-full md:w-2/3 pt-4 space-y-4 flex-none">
+            {" "}
+            <p className="italic">Publicerad: {date}</p>
             <div
               className="wp-content"
               dangerouslySetInnerHTML={{ __html: content }}

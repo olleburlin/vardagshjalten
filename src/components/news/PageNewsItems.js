@@ -27,11 +27,13 @@ export default function PageNewsItems({ context }) {
   `)
   const news = data.allWpPost.nodes
   return (
-    <>
-      {news.map((post, i) => {
-        return <NewsItem key={i} post={post} context={context} />
-      })}
-      {news.length === 0 && "Inga nyheter för tillfället"}
-    </>
+    <div>
+      <div>
+        {news.map((post, i) => {
+          return <NewsItem key={i} post={post} context={context} />
+        })}
+      </div>
+      <div>{news.length === 0 && "Inga nyheter för tillfället"}</div>
+    </div>
   )
 }

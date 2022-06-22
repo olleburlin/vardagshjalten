@@ -9,8 +9,8 @@ export default function HeaderBar() {
   const [isOpen, setOpen] = useState(false)
   return (
     <div className="bg-black">
-      <div className="bg-secondary/60 text-white md:h-screen flex flex-row md:flex-col justify-between items-center p-4 md:p-0">
-        <div className="relative md:pt-8 ">
+      <div className="bg-secondary/60 text-white md:h-screen flex flex-row md:flex-col justify-between items-center p-4 md:p-8 ">
+        <div className="relative ">
           <>
             <div className="z-30 relative">
               <Hamburger
@@ -30,7 +30,7 @@ export default function HeaderBar() {
                 onClick={() => setOpen(false)}
                 className={`${
                   isOpen ? " fixed inset-0" : "opacity-0"
-                } bg-secondary/60`}
+                } bg-secondary/80`}
               />
               <div className="absolute z-20">
                 {isOpen && (
@@ -46,7 +46,7 @@ export default function HeaderBar() {
         {/* Logo */}
         <div className="transform md:-rotate-90 text-white whitespace-nowrap md:mb-24 relative z-30">
           <Link to="/" title="Gå till startsida">
-            <div className="w-36 md:w-48 relative">
+            <div className="w-48 md:w-60 relative">
               <LoggaMono />
             </div>
           </Link>

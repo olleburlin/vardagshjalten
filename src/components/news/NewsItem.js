@@ -1,16 +1,16 @@
 import React from "react"
-
 import Link from "../common/Link"
+
 export default function NewsItem({ post, context }) {
   const { title, uri, date, content } = post
 
   return (
-    <>
+    <div>
       {context === "sidebar" ? (
         <div>
           <div className="text-base">{date}</div>
           <h5>
-            <Link to={"/aktuellt" + uri}>{title}</Link>
+            <Link to={"/nyheter" + uri}>{title}</Link>
           </h5>
         </div>
       ) : context === "pageFeed" ? (
@@ -18,7 +18,7 @@ export default function NewsItem({ post, context }) {
           <div>
             <div className="text-base">{date}</div>
             <h3>
-              <Link to={"/aktuellt" + uri}>{title}</Link>
+              <Link to={"/nyheter" + uri}>{title}</Link>
             </h3>
           </div>
           <div
@@ -30,12 +30,12 @@ export default function NewsItem({ post, context }) {
         <div>
           <div className="text-sm md:text-xl">{date}</div>
           <h4>
-            <Link to={"/aktuellt" + uri}>{title}</Link>
+            <Link to={"/nyheter" + uri}>{title}</Link>
           </h4>
         </div>
       ) : (
         ""
       )}
-    </>
+    </div>
   )
 }

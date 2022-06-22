@@ -19,7 +19,9 @@ h4 {
 h5 {
   @apply font-bold;
 }
-
+.wp-content h2 {
+  @apply py-4;
+}
 .wp-content {
   @apply space-y-4;
 }

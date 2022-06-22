@@ -1,5 +1,6 @@
 import React from "react"
 import FeaturedImagePage from "../common/FeaturedImagePage"
+import PageHeader from "../common/PageHeader"
 import Includes from "./Includes"
 import IncludesNot from "./IncludesNot"
 import ServicesPrices from "./ServicesPrices"
@@ -23,9 +24,7 @@ export default function SingleKurs({ page }) {
         {image && <FeaturedImagePage image={image} />}
         <div className="absolute top-0 w-full h-full flex flex-col justify-center ">
           <div className="px-4 md:px-24 max-w-screen-2xl mx-auto w-full">
-            <h1 className="text-center text-4xl md:text-7xl text-white font-bold underline decoration-8 decoration-primary">
-              {title}
-            </h1>
+            <PageHeader text={title} />
           </div>
         </div>
       </div>
