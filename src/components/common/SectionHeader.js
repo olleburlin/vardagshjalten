@@ -7,7 +7,7 @@ export default function SectionHeader({ text, theme }) {
         theme === "light"
           ? "text-third decoration-primary"
           : "text-secondary decoration-primary"
-      } underline underline-offset-2 decoration-8 text-7xl font-bold text-center py-4 md:py-8`}
+      } underline underline-offset-2 decoration-8 text-4xl md:text-7xl font-bold text-center py-4 md:py-8`}
     >
       {text}
     </h2>

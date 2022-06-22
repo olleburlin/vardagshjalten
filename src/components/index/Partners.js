@@ -29,7 +29,7 @@ export default function Partners() {
     <div className="bg-white">
       <div className="max-w-7xl mx-auto container  py-8 md:py-16">
         <SectionHeader text="Partners" />
-        <div className="grid md:grid-cols-5 gap-4 md:gap-8 items-center">
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-8 items-center">
           {partners.map((partner, i) => {
             return <Partner key={i} partner={partner} />
           })}
@@ -48,7 +48,7 @@ function Partner({ partner }) {
     <div className="p-4">
       <GatsbyImage
         image={getImage(img)}
-        className={`${ratio >= 0.8 && ratio <= 1.2 ? "m-8" : ""}`}
+        className={`${ratio >= 0.8 && ratio <= 1.2 ? "m-4 md:m-8" : ""}`}
       />
     </div>
   )

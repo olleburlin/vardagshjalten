@@ -19,7 +19,7 @@ export default function PresentkortPage({ data }) {
           {image && <FeaturedImagePage image={image} />}
           <div className="absolute top-0 w-full h-full flex flex-col justify-center ">
             <div className="px-4 md:px-24 max-w-screen-2xl mx-auto w-full">
-              <h1 className="text-center text-7xl text-white font-bold underline decoration-8 decoration-primary">
+              <h1 className="text-center text-4xl md:text-7xl text-white font-bold underline decoration-4 md:decoration-8 decoration-primary">
                 {title}
               </h1>
             </div>
