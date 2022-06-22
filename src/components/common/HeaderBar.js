@@ -9,7 +9,7 @@ export default function HeaderBar() {
   const [isOpen, setOpen] = useState(false)
   return (
     <div className="bg-black">
-      <div className="bg-secondary/60 text-white md:h-screen flex flex-row md:flex-col justify-between items-center p-4 md:p-8 ">
+      <div className="bg-primary text-white md:h-screen flex flex-row md:flex-col justify-between items-center p-4 md:p-8 ">
         <div className="relative ">
           <>
             <div className="z-30 relative">
