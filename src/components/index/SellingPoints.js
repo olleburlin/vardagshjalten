@@ -22,8 +22,8 @@ export default function SellingPoints() {
   return (
     <div className="bg-white  text-secondary">
       <div className="container mx-auto px-4 md:px-8 py-16 md:py-32 space-y-32">
-        <div className="grid md:grid-cols-3 gap-4 md:gap-16">
-          {points?.slice(0, 3).map((sellingPoint, i) => {
+        <div className="grid md:grid-cols-4 gap-4 md:gap-16">
+          {points?.slice(0, 4).map((sellingPoint, i) => {
             return <SellingPoint key={i} sellingPoint={sellingPoint} />
           })}
         </div>
@@ -35,7 +35,7 @@ export default function SellingPoints() {
 function SellingPoint({ sellingPoint }) {
   const { titelSellingpoint, beskrivningSellingpoint } = sellingPoint
   return (
-    <div className="flex flex-col items-center gap-4 text-xl">
+    <div className="flex flex-col  gap-4 text-xl">
       <div className="w-24">
         <CheckCircleIcon className="text-primary" />
       </div>

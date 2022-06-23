@@ -56,7 +56,7 @@ function Service({ service, oddEven }) {
       </div>
       <div className="col-span-2">
         <div className="flex h-full flex-col justify-center gap-4 text-secondary">
-          <h4 className="text-3xl md:text-4xl font-bold">{title}</h4>
+          <h3 className="">{title}</h3>
           <p className="md:text-xl font-bold">{ingressFramsidaTjanst}</p>
           <p className="md:text-xl">{kompletterandeInformationFramsida}</p>
         </div>
