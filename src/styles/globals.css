@@ -39,6 +39,9 @@ blockquote {
 #prices .extra-text a {
   @apply underline;
 }
+a.inline-btn {
+  @apply bg-primary text-white text-xl px-3 md:px-4 py-2 md:py-3 rounded-md font-bold uppercase shadow-sm my-4 md:my-8 inline-block;
+}
 /* 
 .form label {
   @apply flex flex-col;
