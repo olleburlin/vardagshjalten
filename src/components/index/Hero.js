@@ -38,10 +38,10 @@ export default function Hero() {
             <h1 className="text-3xl md:text-8xl leading-tight font-bold">
               Hinner du inte med? <br /> Prioritera din tid!
             </h1>
-            <p className="text-2xl md:text-5xl font-bold leading-normal md:leading-relaxed">
+            {/* <p className="text-2xl md:text-5xl font-bold leading-normal md:leading-relaxed">
               Vardagshjälten är städbolaget med helhetslösningar
               <br /> för hem, lokal eller flytt.
-            </p>
+            </p> */}
             <div className="flex flex-col md:flex-row gap-4 text-center md:text-inherit">
               <Button text="Boka möte" theme="light" url="/boka" />
               <Button text="Våra tjänster" theme="dark" url="/tjanster" />

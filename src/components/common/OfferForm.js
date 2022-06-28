@@ -75,7 +75,7 @@ export default function OfferForm() {
             <textarea
               name="Meddelande"
               rows="4"
-              className="block bg-secondary/10 block mt-2 w-full p-4 text-black"
+              className="block bg-secondary/10 mt-2 w-full p-4 text-black"
             />
           </label>
         </div>
@@ -88,7 +88,7 @@ export default function OfferForm() {
         </div>
 
         <div className="form-group">
-          <button className="px-3 py-2 bg-primary text-white font-medium rounded-md">
+          <button className="bg-primary text-white text-xl px-3 md:px-4 py-2 md:py-3 rounded-md font-bold uppercase shadow-sm">
             Skicka
           </button>
         </div>

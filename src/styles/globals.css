@@ -36,7 +36,7 @@ blockquote {
 @tailwind components;
 @tailwind utilities;
 
-#prices a {
+#prices .extra-text a {
   @apply underline;
 }
 /* 

@@ -19,7 +19,6 @@ export default function Footer() {
           Email: info@vardagshjalten.se
         </div>
         <div className="flex-1 md:self-center">
-          <p className="text-lg">Följ oss, vi är sociala:</p>
           <div className="-ml-3">
             <SocialLinks fill={"#ffffff"} />
           </div>
