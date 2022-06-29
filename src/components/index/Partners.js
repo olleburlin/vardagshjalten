@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import SectionHeader from "../common/SectionHeader"
+import Button from "../common/Button"
 
 export default function Partners() {
   const data = useStaticQuery(graphql`
@@ -27,12 +28,27 @@ export default function Partners() {
   const partners = data.wpPage.partners.partners
   return (
     <div className="bg-white">
-      <div className="max-w-7xl mx-auto container  py-8 md:py-16">
+      <div className="hidden lg:block">
+        <StaticImage src="../../images/wave.png" quality={100} />
+      </div>
+      <div className="max-w-7xl mx-auto container px-4 md:px-8 py-8 md:py-16 space-y-4 md:space-y-8 lg:-mt-64 relative z-20">
         <SectionHeader text="Partners" />
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-8 items-center">
-          {partners.map((partner, i) => {
-            return <Partner key={i} partner={partner} />
-          })}
+        <div>
+          <div className="space-y-4 md:space-y-8">
+            <h3>Löneförmån för dina anställda</h3>
+            <p className="text-xl md:text-2xl">
+              Vid ett samarbete med oss erbjuder vi alla era anställda 10%
+              rabatt på hemstädning.
+            </p>
+            <div className="inline-block">
+              <Button text="Läs mer" />
+            </div>
+          </div>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-x-8 items-center ">
+            {partners.slice(0, 6).map((partner, i) => {
+              return <Partner key={i} partner={partner} />
+            })}
+          </div>
         </div>
       </div>
     </div>
@@ -42,14 +58,10 @@ export default function Partners() {
 function Partner({ partner }) {
   const { loggaPartners } = partner
   const img = loggaPartners.localFile.childImageSharp
-  const ratio = loggaPartners.width / loggaPartners.height
 
   return (
-    <div className="p-4">
-      <GatsbyImage
-        image={getImage(img)}
-        className={`${ratio >= 0.8 && ratio <= 1.2 ? "m-4 md:m-8" : ""}`}
-      />
+    <div className="">
+      <GatsbyImage image={getImage(img)} />
     </div>
   )
 }

@@ -21,12 +21,12 @@ export default function Testimonials() {
   const quotes = data.wpPage.referenser.citat
   return (
     <div className="bg-secondary  text-third">
-      <div className="container mx-auto px-4 md:px-8 py-16 md:py-32 space-y-8 md:space-y-16">
+      <div className="container mx-auto px-4 md:px-8 pt-16 pb-32  space-y-8 md:space-y-16">
         <div>
           <SectionHeader text="Referenser" theme="light" />
         </div>
-        <div className="grid md:grid-cols-3 gap-12 md:gap-24 ">
-          {quotes.map((quote, i) => {
+        <div className="grid md:grid-cols-4 gap-8 md:gap-16 ">
+          {quotes.slice(0, 4).map((quote, i) => {
             return <Quote key={i} quote={quote} />
           })}
         </div>

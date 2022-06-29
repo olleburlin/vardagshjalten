@@ -17,7 +17,7 @@ export default function ServicesIndex() {
             node {
               localFile {
                 childImageSharp {
-                  gatsbyImageData
+                  gatsbyImageData(aspectRatio: 1.5)
                 }
               }
             }
@@ -28,37 +28,39 @@ export default function ServicesIndex() {
   `)
   const services = data.allWpTjanst.nodes
   return (
-    <div className="bg-gradient-to-b from-primary/10 to-primary/40">
-      <div className="container px-4 md:px-8 mx-auto py-8 md:py-16 grid gap-x-4 gap-y-8 md:gap-16 ">
-        {services.map((service, i) => {
-          return <Service key={i} oddEven={i} service={service} />
-        })}
-
-        <div className="flex items-center justify-center">
-          <Button text="Visa alla &rarr;" url="/tjanster" />
+    <div className="bg-primary/10">
+      <div className="max-w-8xl mx-auto container px-4 md:px-8 py-8 md:py-16 ">
+        <div className=" grid grid-cols-3 gap-x-4 gap-y-8 md:gap-16 w-full">
+          {services.map((service, i) => {
+            return <Service key={i} service={service} />
+          })}
+        </div>
+        <div className="pt-8 md:pt-16 flex items-center justify-center">
+          <div className="inline-block">
+            <Button text="Visa alla &rarr;" url="/tjanster" />
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-function Service({ service, oddEven }) {
+function Service({ service }) {
   const { title, featuredImage, grundinfo } = service
   const { ingressFramsidaTjanst, kompletterandeInformationFramsida } = grundinfo
   const img = featuredImage?.node.localFile
 
   return (
-    <div className="grid md:grid-cols-4 gap-4 md:gap-16  md:p-8 items-center">
-      <div className={`${oddEven % 2 ? "md:order-last" : ""} col-span-2`}>
+    <div className="space-y-4">
+      <div>
         <div className="bg-secondary">
           <GatsbyImage image={getImage(img)} className="" alt="Tjänst" />
         </div>
       </div>
-      <div className="col-span-2">
-        <div className="flex h-full flex-col justify-center gap-4 text-secondary">
+      <div>
+        <div className="flex  flex-col gap-4 text-secondary">
           <h3 className="">{title}</h3>
-          <p className="md:text-xl font-bold">{ingressFramsidaTjanst}</p>
-          <p className="md:text-xl">{kompletterandeInformationFramsida}</p>
+          <p className="md:text-xl">{ingressFramsidaTjanst}</p>
         </div>
       </div>
     </div>

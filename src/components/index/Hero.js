@@ -34,7 +34,7 @@ export default function Hero() {
           />
         </div>
         <div className="relative w-full h-full inset-x-0 flex items-center justify-start">
-          <div className="md:ml-24 text-white space-y-4 p-8">
+          <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-8">
             <h1 className="text-3xl md:text-8xl leading-tight font-bold">
               Hinner du inte med? <br /> Prioritera din tid!
             </h1>
