@@ -29,7 +29,7 @@ export default function Location() {
               </p>
             </div>
 
-            <div className="w-full grayscale h-[50vh]  md:w-7/12">
+            <div className="w-full  h-[50vh]  md:w-7/12">
               {useHasMounted && (
                 <MapContainer
                   center={[55.8794931, 12.8108199]}
