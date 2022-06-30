@@ -3,7 +3,7 @@ import Button from "../common/Button"
 export default function Rekommendera() {
   return (
     <div className="bg-primary py-8 md:py-16">
-      <div className="max-w-7xl mx-auto container px-4 md:px-8">
+      <div className="max-w-screen-2xl mx-auto container px-4 md:px-8">
         <div className="flex flex-col gap-8 md">
           <h3 className="text-secondary">Rekommendationer</h3>
           <p className="text-3xl md:text-7xl text-white font-bold">
