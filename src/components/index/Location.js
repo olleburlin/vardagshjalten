@@ -6,7 +6,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
 export default function Location() {
   if (typeof window !== "undefined") {
     return (
-      <div className="bg-primary/10">
+      <div className="bg-white">
         <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-8 md:space-y-16">
           <div>
             <SectionHeader text="Här finns vi" theme="dark" />
