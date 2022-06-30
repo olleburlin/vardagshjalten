@@ -26,10 +26,10 @@ export default function Hero() {
   return (
     <div className="md:h-screen">
       <div className="h-full overflow-hidden relative">
-        <div className="absolute h-full w-full bg-black">
+        <div className="absolute h-full w-full bg-secondary">
           <GatsbyImage
             image={getImage(img)}
-            class="h-full w-full opacity-60"
+            class="h-full w-full opacity-70"
             alt="Hero Image"
           />
         </div>

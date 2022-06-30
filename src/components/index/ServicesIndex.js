@@ -28,7 +28,7 @@ export default function ServicesIndex() {
   `)
   const services = data.allWpTjanst.nodes
   return (
-    <div className="bg-primary/10">
+    <div className="bg-white">
       <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16 ">
         <div className=" grid grid-cols-3 gap-x-4 gap-y-8 md:gap-16 w-full">
           {services.map((service, i) => {
