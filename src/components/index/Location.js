@@ -7,7 +7,7 @@ export default function Location() {
   if (typeof window !== "undefined") {
     return (
       <div className="bg-primary/10">
-        <div className="container mx-auto px-4 md:px-8 py-16 space-y-8 md:space-y-16">
+        <div className="container max-w-7xl mx-auto px-4 md:px-8 py-16 space-y-8 md:space-y-16">
           <div>
             <SectionHeader text="Här finns vi" theme="dark" />
           </div>
@@ -29,7 +29,7 @@ export default function Location() {
               </p>
             </div>
 
-            <div className="w-full grayscale h-[50vh] md:h-[70vh] md:w-7/12">
+            <div className="w-full grayscale h-[50vh]  md:w-7/12">
               {useHasMounted && (
                 <MapContainer
                   center={[55.8794931, 12.8108199]}

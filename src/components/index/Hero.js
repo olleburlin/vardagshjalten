@@ -43,8 +43,7 @@ export default function Hero() {
               <br /> för hem, lokal eller flytt.
             </p> */}
             <div className="flex flex-col md:flex-row gap-4 text-center md:text-inherit">
-              <Button text="Boka möte" theme="light" url="/boka" />
-              <Button text="Våra tjänster" theme="dark" url="/tjanster" />
+              <Button text="Boka möte" theme="dark" url="/boka" />
             </div>
           </div>
         </div>
