@@ -35,7 +35,7 @@ export default function Partners() {
           className="scale-105"
         />
       </div>
-      <div className="max-w-7xl mx-auto container px-4 md:px-8 py-8 md:py-16 space-y-4 md:space-y-8 lg:-mt-64 relative z-20">
+      <div className="max-w-7xl mx-auto container px-4 md:px-8 py-8 md:py-16 space-y-4 md:space-y-8 lg:-mt-48 relative z-20">
         <SectionHeader text="Partners" />
         <div>
           <div className="space-y-4 md:space-y-8">
