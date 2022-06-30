@@ -6,7 +6,9 @@ export default function Button({ text, theme, url }) {
     <Link to={url}>
       <div
         className={`${
-          theme === "light" ? "bg-white text-primary" : "bg-primary text-white"
+          theme === "light"
+            ? "bg-secondary text-white"
+            : "bg-primary text-white"
         } text-xl px-3 md:px-4 py-2 md:py-3 rounded-md font-bold uppercase shadow-sm`}
       >
         {text}

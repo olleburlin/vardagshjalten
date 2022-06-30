@@ -29,7 +29,11 @@ export default function Partners() {
   return (
     <div className="bg-white">
       <div className="hidden lg:block">
-        <StaticImage src="../../images/wave.png" quality={100} />
+        <StaticImage
+          src="../../images/wave.png"
+          quality={100}
+          className="scale-105"
+        />
       </div>
       <div className="max-w-7xl mx-auto container px-4 md:px-8 py-8 md:py-16 space-y-4 md:space-y-8 lg:-mt-64 relative z-20">
         <SectionHeader text="Partners" />
