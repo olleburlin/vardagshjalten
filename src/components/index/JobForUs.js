@@ -6,7 +6,7 @@ import SectionHeader from "../common/SectionHeader"
 export default function JobForUs() {
   return (
     <div className="bg-secondary  text-third">
-      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 pt-16 pb-16  space-y-8 ">
+      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 pt-16 pb-16  ">
         <div>
           <SectionHeader text="Jobba med oss" theme="light" />
         </div>
@@ -24,7 +24,7 @@ export default function JobForUs() {
               </p>
             </div>
           </div>
-          <div className="col-span-2 flex flex-row gap-8 items-center">
+          <div className="col-span-2 flex flex-row gap-8 items-center p-16">
             <div className="flex-1">
               <StaticImage src="../../images/gasell.png" />
             </div>
