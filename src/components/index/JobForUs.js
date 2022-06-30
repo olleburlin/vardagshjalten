@@ -6,7 +6,7 @@ import SectionHeader from "../common/SectionHeader"
 export default function JobForUs() {
   return (
     <div className="bg-secondary  text-third">
-      <div className="container max-w-7xl mx-auto px-4 md:px-8 pt-16 pb-32  space-y-8 ">
+      <div className="container max-w-7xl mx-auto px-4 md:px-8 pt-16 pb-16  space-y-8 ">
         <div>
           <SectionHeader text="Jobba med oss" theme="light" />
         </div>
