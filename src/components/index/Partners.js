@@ -28,7 +28,7 @@ export default function Partners() {
   const partners = data.wpPage.partners.partners
   return (
     <div className="bg-white">
-      <div className="hidden lg:block">
+      <div className="hidden lg:block overflow-hidden">
         <StaticImage
           src="../../images/wave.png"
           quality={100}

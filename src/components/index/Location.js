@@ -29,12 +29,12 @@ export default function Location() {
               </p>
             </div>
 
-            <div className="w-full grayscale md:w-7/12">
+            <div className="w-full grayscale h-[50vh] md:h-[70vh] md:w-7/12">
               {useHasMounted && (
                 <MapContainer
                   center={[55.8794931, 12.8108199]}
                   zoom={8}
-                  style={{ height: "70vh" }}
+                  style={{ height: "100%" }}
                 >
                   <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
