@@ -37,7 +37,7 @@ export default function ServicesIndex() {
             return <Service key={i} service={service} />
           })}
         </div>
-        <div className="pt-8 md:pt-16 flex items-center justify-center">
+        <div className="pt-8 md:pt-16 flex">
           <div className="inline-block">
             <Button text="Visa alla &rarr;" url="/tjanster" />
           </div>
@@ -49,7 +49,7 @@ export default function ServicesIndex() {
 
 function Service({ service }) {
   const { title, featuredImage, grundinfo } = service
-  const { ingressFramsidaTjanst, kompletterandeInformationFramsida } = grundinfo
+  const { ingressFramsidaTjanst } = grundinfo
   const img = featuredImage?.node.localFile
 
   return (

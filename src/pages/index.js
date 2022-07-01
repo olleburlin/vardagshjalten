@@ -19,11 +19,13 @@ const IndexPage = () => (
     <Hero />
     <ServicesIndex />
     <SellingPoints />
-    <Testimonials />
+
     <Location />
-    <Hemstadning />
     <Rekommendera />
+    <Hemstadning />
+    <Testimonials />
     <Partners />
+
     <JobForUs />
   </Layout>
 )

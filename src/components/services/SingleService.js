@@ -53,10 +53,16 @@ export default function SingleKurs({ page }) {
               )}
             </div>
           </div>
-          {priserTjanst.prisklass && (
+          {priserTjanst.prisklass ? (
             <div className="md:col-span-1">
               <div className="bg-primary/20 p-8">
                 <ServicesPrices prices={priserTjanst} />
+              </div>
+            </div>
+          ) : (
+            <div className="md:col-span-1">
+              <div className="bg-primary/20 p-8 md:text-2xl">
+                Vi skräddarsyr efter dina behov
               </div>
             </div>
           )}

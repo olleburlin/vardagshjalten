@@ -30,9 +30,9 @@ export default function Partners() {
     <div className="bg-white">
       <div className="hidden lg:block overflow-hidden">
         <StaticImage
-          src="../../images/wave.png"
+          src="../../images/wave2.png"
           quality={100}
-          className="scale-105"
+          className="scale-x-105"
         />
       </div>
       <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16 space-y-4 md:space-y-8 lg:-mt-48 relative z-20">

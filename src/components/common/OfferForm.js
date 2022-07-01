@@ -61,7 +61,6 @@ export default function OfferForm() {
                 <option value="Flyttstädning">Flyttstädning</option>
                 <option value="Fönsterputs">Fönsterputs</option>
                 <option value="Trädgårdsarbete">Trädgårdsarbete</option>
-                <option value="Snöskottning">Snöskottning</option>
                 <option value="Fastighetsskötsel">Fastighetsskötsel</option>
                 <option value="Kontorsstäd">Kontorsstäd</option>
                 <option value="Annat">Annat</option>{" "}

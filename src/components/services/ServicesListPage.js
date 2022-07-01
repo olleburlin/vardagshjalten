@@ -45,7 +45,7 @@ export default function ServicesListPage() {
         </div>
       </div>
       <div className="relative px-4 md:px-24 max-w-screen-2xl w-full space-y-8 md:space-y-16 py-8 md:py-16">
-        <div className="  max-w-4xl mx-auto md:py-8">
+        <div className="  max-w-4xl md:py-8">
           <div className="text-xl space-y-4">
             <p>
               Vi värnar om ditt hem eller era lokaler och hjälper er på bästa

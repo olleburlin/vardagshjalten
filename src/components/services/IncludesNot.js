@@ -6,7 +6,7 @@ export default function IncludesNot({ innefattarInte, service }) {
 
   return (
     <div className="space-y-4 md:space-y-8">
-      <h2>{service + " Innefattar inte"}</h2>
+      <h2>Vad ingår inte</h2>
       <div>
         <div dangerouslySetInnerHTML={{ __html: fritextInnefattarinte }} />
       </div>
