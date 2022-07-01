@@ -24,7 +24,7 @@ export default function Hero() {
   const img = data.wpPage.bildspel.bilder[0].bild.localFile.childImageSharp
 
   return (
-    <div className="md:h-screen">
+    <div className="h-[50vh] md:h-screen">
       <div className="h-full overflow-hidden relative">
         <div className="absolute h-full w-full bg-secondary">
           <GatsbyImage
@@ -35,14 +35,14 @@ export default function Hero() {
         </div>
         <div className="relative w-full h-full inset-x-0 flex items-center justify-start">
           <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-8">
-            <h1 className="text-3xl md:text-8xl leading-tight font-bold">
+            <h1 className="text-4xl md:text-8xl leading-tight font-bold">
               Hinner du inte med? <br /> Prioritera din tid!
             </h1>
             {/* <p className="text-2xl md:text-5xl font-bold leading-normal md:leading-relaxed">
               Vardagshjälten är städbolaget med helhetslösningar
               <br /> för hem, lokal eller flytt.
             </p> */}
-            <div className="flex flex-col md:flex-row gap-4 text-center md:text-inherit">
+            <div className=" md:text-inherit">
               <Button text="Boka möte" theme="dark" url="/boka" />
             </div>
           </div>

@@ -41,7 +41,7 @@ export default function Location() {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
                   <Marker position={[55.8794931, 12.8108199]}>
-                    <Popup>Landskrona</Popup>
+                    <Popup color="#ff12aa">Landskrona</Popup>
                   </Marker>
                   <Marker position={[55.7049742, 13.162891]}>
                     <Popup>Lund</Popup>

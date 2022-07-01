@@ -25,7 +25,9 @@ h5 {
 .wp-content {
   @apply space-y-4;
 }
-
+p {
+  @apply text-lg;
+}
 blockquote {
   @apply pl-8 border-l-4 border-primary italic text-lg;
 }

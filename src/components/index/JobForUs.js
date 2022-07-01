@@ -12,7 +12,7 @@ export default function JobForUs() {
         </div>
         <div className="grid md:grid-cols-6 gap-8 items-center justify-center">
           <div className="col-span-4 space-y-8">
-            <div className="text-xl">
+            <div className="">
               <p>
                 Vår framgång sitter i våra medarbetare. Det är summan i alla
                 våra medarbetares engagemang, idéer, driv och känsla för service

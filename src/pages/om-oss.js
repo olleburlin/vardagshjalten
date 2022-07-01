@@ -33,6 +33,7 @@ export default function OmOssPage({ data }) {
         </div>
         <blockquote></blockquote>
       </div>
+      <a className="inline-btn" />
     </Layout>
   )
 }
