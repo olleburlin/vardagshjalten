@@ -51,11 +51,11 @@ export default function Partners() {
               <Button text="Läs mer" />
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-3 md:grid-cols-10 gap-x-10 items-center ">
-          {partners.slice(0, 20).map((partner, i) => {
-            return <Partner key={i} partner={partner} />
-          })}
+          <div className="grid grid-cols-4 md:grid-cols-10 gap-x-10 items-center ">
+            {partners.slice(0, 20).map((partner, i) => {
+              return <Partner key={i} partner={partner} />
+            })}
+          </div>
         </div>
       </div>
     </div>
