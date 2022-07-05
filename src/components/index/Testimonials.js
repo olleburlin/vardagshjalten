@@ -22,7 +22,7 @@ export default function Testimonials() {
   const quotes = data.wpPage.referenser.citat
   return (
     <div className="bg-primary  text-secondary">
-      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 pt-16 pb-32  space-y-8 md:space-y-16">
+      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 py-8 md:py-16  space-y-8 md:space-y-16">
         <div>
           <div>
             <SectionHeader text="Referenser" theme="light" />

@@ -35,24 +35,27 @@ export default function Partners() {
           className="scale-x-105"
         />
       </div>
-      <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16 space-y-4 md:space-y-8 lg:-mt-48 relative z-20">
-        <SectionHeader text="Partners" />
+      <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16  lg:-mt-48 relative z-20">
         <div>
-          <div className="space-y-4 md:space-y-8">
-            <h3>Löneförmån för dina anställda</h3>
-            <p className="text-xl md:text-2xl">
+          <SectionHeader text="Löneförmån för dina anställda" />
+        </div>
+        <div className="space-y-8">
+          <div>
+            <p className="text-3xl md:text-6xl font-bold">
               Vid ett samarbete med oss erbjuder vi alla era anställda 10%
               rabatt på hemstädning
             </p>
+          </div>
+          <div>
             <div className="inline-block">
               <Button text="Läs mer" />
             </div>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-x-8 items-center ">
-            {partners.slice(0, 6).map((partner, i) => {
-              return <Partner key={i} partner={partner} />
-            })}
-          </div>
+        </div>
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-x-8 items-center ">
+          {partners.slice(0, 6).map((partner, i) => {
+            return <Partner key={i} partner={partner} />
+          })}
         </div>
       </div>
     </div>
