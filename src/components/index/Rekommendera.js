@@ -9,7 +9,7 @@ export default function Rekommendera() {
           <SectionHeader text="Rekommendationer" theme="light" />
           <p className="text-3xl md:text-7xl text-white font-bold">
             Rekommendera oss, vi bjuder på halva städkostnaden vid nästa
-            tillfälle.
+            tillfälle
           </p>
           <div>
             <div className="inline-block">

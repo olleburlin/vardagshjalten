@@ -8,7 +8,7 @@ export default function Hemstadning() {
         <div className="flex flex-col gap-8 md">
           <h3 className="">Hemstädning</h3>
           <p className="text-3xl md:text-7xl text-white font-bold">
-            Prioritera din tid, vi tar hand om ditt hem.
+            Prioritera din tid, vi tar hand om ditt hem
           </p>
           <div>
             <div className="inline-block">

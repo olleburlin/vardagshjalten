@@ -42,7 +42,7 @@ export default function Partners() {
             <h3>Löneförmån för dina anställda</h3>
             <p className="text-xl md:text-2xl">
               Vid ett samarbete med oss erbjuder vi alla era anställda 10%
-              rabatt på hemstädning.
+              rabatt på hemstädning
             </p>
             <div className="inline-block">
               <Button text="Läs mer" />
