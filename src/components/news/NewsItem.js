@@ -17,9 +17,9 @@ export default function NewsItem({ post, context }) {
         <div className="grid md:gap-4 border-b-2 last:border-0 border-secondary/50 py-4">
           <div>
             <div className="text-base">{date}</div>
-            <h3>
+            <h2>
               <Link to={"/nyheter" + uri}>{title}</Link>
-            </h3>
+            </h2>
           </div>
           <div
             className="wp-content"

@@ -7,10 +7,8 @@ import OfferForm from "../components/common/OfferForm"
 
 export default function OffertPage({ data }) {
   const image = data.wpPage.featuredImage?.node.localFile.childImageSharp
-  const { title, content, kontor } = data.wpPage
+  const { title, content } = data.wpPage
 
-  const offices = kontor.kontor
-  console.log(offices)
   return (
     <Layout>
       <SEO title="Kontakt" />
@@ -47,13 +45,7 @@ export const query = graphql`
       id
       title
       content
-      kontor {
-        kontor {
-          namnKontor
-          telefonLokal
-          epostLokal
-        }
-      }
+
       featuredImage {
         node {
           localFile {

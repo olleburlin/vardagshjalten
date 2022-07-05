@@ -7,10 +7,10 @@ import Button from "../components/common/Button"
 
 export default function KontaktPage({ data }) {
   const image = data.wpPage.featuredImage?.node.localFile.childImageSharp
-  const { title, content, kontor } = data.wpPage
+  const { title, content, personal } = data.wpPage
 
-  const offices = kontor.kontor
-  console.log(offices)
+  const persons = personal.personal
+
   return (
     <Layout>
       <SEO title="Kontakt" />
@@ -26,20 +26,20 @@ export default function KontaktPage({ data }) {
           </div>
         </div>
         <div className=" relative px-4 md:px-24 max-w-screen-2xl w-full space-y-8 py-8 md:py-16">
-          <div className="page-content max-w-4xl mx-auto">
+          <div className="page-content max-w-7xl mx-auto">
             <div className="md:col-span-2 space-y-4 md:space-y-8">
               <div
                 className="wp-content"
                 dangerouslySetInnerHTML={{ __html: content }}
               ></div>
-              <div className="flex flex-col w-full items-center justify-center">
+              {/* <div className="flex flex-col w-full items-center justify-center">
                 <div className="inline-block py-4">
                   <Button text="Få en offert" url="/offert" />
                 </div>
-              </div>
-              <div className="grid md:grid-cols-4 gap-4 md:gap-8">
-                {offices.map((office, i) => {
-                  return <Office key={i} office={office} />
+              </div> */}
+              <div className="grid md:grid-cols-3 gap-4 md:gap-12">
+                {persons.map((person, i) => {
+                  return <Person key={i} person={person} />
                 })}
               </div>
             </div>
@@ -50,15 +50,18 @@ export default function KontaktPage({ data }) {
   )
 }
 
-function Office({ office }) {
-  const { namnKontor, epostLokal, telefonLokal } = office
+function Person({ person }) {
+  const { namnPerson, epostPerson, telefonPerson, titelPerson } = person
   return (
-    <div>
-      <h3>{namnKontor}</h3>
-      <div className="">
-        <a href={`mailto:${epostLokal}`}>{epostLokal}</a>
+    <div className="space-y-4">
+      <h3> {titelPerson}</h3>
+      <div>
+        <h4>{namnPerson}</h4>
+        <div className="">
+          <a href={`mailto:${epostPerson}`}>{epostPerson}</a>
+        </div>
+        <div>{telefonPerson}</div>
       </div>
-      <div>{telefonLokal}</div>
     </div>
   )
 }
@@ -69,11 +72,12 @@ export const query = graphql`
       id
       title
       content
-      kontor {
-        kontor {
-          namnKontor
-          telefonLokal
-          epostLokal
+      personal {
+        personal {
+          epostPerson
+          namnPerson
+          telefonPerson
+          titelPerson
         }
       }
       featuredImage {

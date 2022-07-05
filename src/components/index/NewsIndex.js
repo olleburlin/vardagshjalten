@@ -27,10 +27,10 @@ export default function NewsIndex() {
   `)
   const posts = data.allWpPost.nodes
   return (
-    <div className="bg-secondary/40">
-      <div className="py-8 md:py-16 container max-w-7xl mx-auto  px-4 md:px-8">
+    <div className="bg-white">
+      <div className="py-8 md:py-16 container max-w-screen-2xl mx-auto  px-4 md:px-8">
         <SectionHeader text="Nyheter" />
-        <div className="my-8 grid md:grid-cols-3 gap-4 md:gap-8">
+        <div className="my-8 grid gap-4 md:gap-8">
           {posts.map((post, i) => {
             return <NewsIndexItem key={i.id} post={post} />
           })}
@@ -44,9 +44,9 @@ function NewsIndexItem({ post }) {
   const { title, date, uri } = post
   return (
     <div>
-      <Link to={"nyheter" + uri}>
-        <div>{date}</div>
-        <h4>{title}</h4>
+      <Link to={"/nyheter" + uri}>
+        <p className="text-xl">{date}</p>
+        <h2>{title}</h2>
       </Link>
     </div>
   )

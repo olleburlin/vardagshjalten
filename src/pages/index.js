@@ -4,6 +4,7 @@ import Hemstadning from "../components/index/Hemstadning"
 import Hero from "../components/index/Hero"
 import JobForUs from "../components/index/JobForUs"
 import Location from "../components/index/Location"
+import NewsIndex from "../components/index/NewsIndex"
 
 import Partners from "../components/index/Partners"
 import Rekommendera from "../components/index/Rekommendera"
@@ -27,6 +28,7 @@ const IndexPage = () => (
     <Partners />
 
     <JobForUs />
+    <NewsIndex />
   </Layout>
 )
 

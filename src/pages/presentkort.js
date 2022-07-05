@@ -46,13 +46,7 @@ export const query = graphql`
       id
       title
       content
-      kontor {
-        kontor {
-          namnKontor
-          telefonLokal
-          epostLokal
-        }
-      }
+
       featuredImage {
         node {
           localFile {

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Button from "../common/Button"
 import SectionHeader from "../common/SectionHeader"
+import Link from "../common/Link"
 
 export default function ServicesIndex() {
   const data = useStaticQuery(graphql`
@@ -10,6 +11,7 @@ export default function ServicesIndex() {
       allWpTjanst(limit: 3) {
         nodes {
           title
+          uri
           grundinfo {
             ingressFramsidaTjanst
             kompletterandeInformationFramsida
@@ -48,20 +50,25 @@ export default function ServicesIndex() {
 }
 
 function Service({ service }) {
-  const { title, featuredImage, grundinfo } = service
+  const { title, featuredImage, grundinfo, uri } = service
   const { ingressFramsidaTjanst } = grundinfo
   const img = featuredImage?.node.localFile
 
   return (
     <div className="space-y-4">
       <div>
-        <div className="bg-secondary">
-          <GatsbyImage image={getImage(img)} className="" alt="Tjänst" />
-        </div>
+        <Link to={uri}>
+          <div className="bg-secondary">
+            <GatsbyImage image={getImage(img)} className="" alt="Tjänst" />
+          </div>
+        </Link>
       </div>
       <div>
         <div className="flex  flex-col gap-4 text-secondary">
-          <h3 className="">{title}</h3>
+          <Link to={uri}>
+            {" "}
+            <h3 className="">{title}</h3>
+          </Link>
           <p className="md:text-xl">{ingressFramsidaTjanst}</p>
         </div>
       </div>
