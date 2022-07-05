@@ -3,14 +3,11 @@ import { graphql } from "gatsby"
 import FeaturedImagePage from "../components/common/FeaturedImagePage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import OfferForm from "../components/common/OfferForm"
 
 export default function PresentkortPage({ data }) {
   const image = data.wpPage.featuredImage?.node.localFile.childImageSharp
-  const { title, content, kontor } = data.wpPage
+  const { title, content } = data.wpPage
 
-  const offices = kontor.kontor
-  console.log(offices)
   return (
     <Layout>
       <SEO title={title} />
