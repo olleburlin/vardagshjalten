@@ -52,8 +52,8 @@ export default function Partners() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-x-8 items-center ">
-          {partners.slice(0, 6).map((partner, i) => {
+        <div className="grid grid-cols-3 md:grid-cols-10 gap-x-10 items-center ">
+          {partners.slice(0, 20).map((partner, i) => {
             return <Partner key={i} partner={partner} />
           })}
         </div>
