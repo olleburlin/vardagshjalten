@@ -24,7 +24,7 @@ export default function JobForUs() {
               </p>
             </div>
           </div>
-          <div className="col-span-2 flex flex-row gap-8 items-center p-16">
+          <div className="col-span-4 md:col-span-2 flex flex-row gap-8 items-center p-16">
             <div className="flex-1">
               <StaticImage src="../../images/gasell.png" />
             </div>

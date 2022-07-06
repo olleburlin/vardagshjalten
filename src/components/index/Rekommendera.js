@@ -5,7 +5,7 @@ export default function Rekommendera() {
   return (
     <div className="bg-primary py-8 md:py-16">
       <div className="max-w-screen-2xl mx-auto container px-4 md:px-8">
-        <div className="flex flex-col gap-8 md">
+        <div className="space-y-8">
           <SectionHeader text="Rekommendationer" theme="light" />
           <p className="text-3xl md:text-7xl text-white font-bold">
             Rekommendera oss, vi bjuder på halva städkostnaden vid nästa
