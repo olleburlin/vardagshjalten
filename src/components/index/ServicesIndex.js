@@ -32,7 +32,7 @@ export default function ServicesIndex() {
   const services = data.allWpTjanst.nodes
   return (
     <div className="bg-white">
-      <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16 ">
+      <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16 space-y-8">
         <SectionHeader text="Våra tjänster" />
         <div className=" grid md:grid-cols-3 gap-x-4 gap-y-8 md:gap-16 w-full">
           {services.map((service, i) => {
@@ -67,7 +67,7 @@ function Service({ service }) {
         <div className="flex  flex-col gap-4 text-secondary">
           <Link to={uri}>
             {" "}
-            <h3 className="">{title}</h3>
+            <h2 className="text-3xl">{title}</h2>
           </Link>
           <p className="md:text-xl">{ingressFramsidaTjanst}</p>
         </div>

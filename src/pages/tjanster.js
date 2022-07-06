@@ -5,7 +5,7 @@ import ServicesListPage from "../components/services/ServicesListPage"
 
 const TjansterPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Tjänster" />
     <ServicesListPage />
   </Layout>
 )

@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../../components/layout"
 import { graphql } from "gatsby"
 import SingleNewsPage from "../../components/news/SingleNewsPage"
+import SEO from "../../components/seo"
 
 export default function PostTemplate({ data }) {
   const post = data.wpPost
   return (
     <Layout>
+      <SEO title={post.title} />
       <SingleNewsPage post={post} />
     </Layout>
   )

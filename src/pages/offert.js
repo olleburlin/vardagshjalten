@@ -11,7 +11,7 @@ export default function OffertPage({ data }) {
 
   return (
     <Layout>
-      <SEO title="Kontakt" />
+      <SEO title="Offert" />
       <div className="flex flex-col items-center justify-start min-h-screen">
         <div className=" w-full relative bg-gradient-to-t bg-black">
           {image && <FeaturedImagePage image={image} />}
