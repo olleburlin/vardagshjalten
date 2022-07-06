@@ -20,7 +20,7 @@ export default function Location() {
           <SectionHeader text="Här finns vi" theme="dark" />
         </div>
 
-        <div className="flex  flex-col md:flex-row gap-4 md:gap-8 my-8 w-full">
+        <div className="flex  flex-col xl:flex-row gap-4 md:gap-8 my-8 w-full">
           <div className="w-full flex flex-col justify-center space-y-8 text-xl">
             <p className="text-3xl md:text-7xl font-bold">
               Vi utför våra tjänster i följande orter med omnejd

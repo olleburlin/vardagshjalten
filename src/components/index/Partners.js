@@ -35,13 +35,13 @@ export default function Partners() {
           className="scale-x-105"
         />
       </div>
-      <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16  lg:-mt-48 relative z-20">
-        <div>
+      <div className="max-w-screen-2xl mx-auto container px-4 md:px-8 py-8 md:py-16  lg:-mt-48">
+        <div className="relative z-10">
           <SectionHeader text="Löneförmån för dina anställda" />
         </div>
         <div className="space-y-8">
           <div>
-            <p className="text-3xl md:text-6xl font-bold">
+            <p className="text-3xl md:text-6xl font-bold relative z-10">
               Vid ett samarbete med oss erbjuder vi alla era anställda 10%
               rabatt på hemstädning
             </p>
