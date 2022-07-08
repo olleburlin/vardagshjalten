@@ -39,10 +39,10 @@ export default function Location() {
             </p>
           </div>
 
-          <div className="w-full  h-[50vh] md:h-[60vh] ">
+          <div className="w-full  h-[60vh] md:h-[60vh] ">
             {useHasMounted && (
               <MapContainer
-                center={[55.8794931, 12.8108199]}
+                center={[55.8385498, 13.2839836]}
                 zoom={8}
                 style={{ height: "100%" }}
               >
