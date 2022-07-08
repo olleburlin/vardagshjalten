@@ -39,7 +39,7 @@ export default function Location() {
             </p>
           </div>
 
-          <div className="w-full  h-[50vh] ">
+          <div className="w-full  h-[50vh] md:h-[60vh] ">
             {useHasMounted && (
               <MapContainer
                 center={[55.8516707, 13.645246]}
@@ -48,7 +48,7 @@ export default function Location() {
               >
                 <TileLayer
                   attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                  url="https://api.mapbox.com/styles/v1/olleburlin/cl5cb3w1j002714p9ezml25vd/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoib2xsZWJ1cmxpbiIsImEiOiJjazM2MzJpamkwMzQ1M2xubmd0d2kxODByIn0.5vf54qq-TkiPa6aJqb7oEQ"
                 />
                 <Marker position={[55.8794931, 12.8108199]} icon={myIcon}>
                   <Popup color="#ff12aa">Landskrona</Popup>
