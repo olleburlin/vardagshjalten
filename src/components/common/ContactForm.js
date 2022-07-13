@@ -86,8 +86,8 @@ export default function ContactForm() {
                 <option value="Facetime (endast för Iphone)">
                   Facetime (endast för Iphone)
                 </option>
-                <option value="WhatsApp (kräver APP i telfonen)">
-                  WhatsApp (kräver APP i telfonen)
+                <option value="WhatsApp (kräver APP i telefonen)">
+                  WhatsApp (kräver APP i telefonen)
                 </option>
               </select>
             </label>

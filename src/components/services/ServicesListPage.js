@@ -51,7 +51,7 @@ export default function ServicesListPage() {
               Vi värnar om ditt hem eller era lokaler och hjälper er på bästa
               sätt för att resultatet ska bli skinande rent och hemtrevligt. Vi
               har noggrant utvald personal som kommer gå på djupet och se till
-              att det blir ett riktigt nöje att komma in till ert nystädade hem
+              att det blir ett rent nöje att komma in till ert nystädade hem
               eller kontor.
             </p>
 

@@ -29,10 +29,11 @@ export default function OfferForm() {
           </div>
           <div className="form-group">
             <label htmlFor="Telefon">
-              Telefon
+              Telefon*
               <input
                 type="text"
                 name="Telefon"
+                required
                 className="bg-secondary/10 block mt-2 w-full p-4 text-black"
               />
             </label>

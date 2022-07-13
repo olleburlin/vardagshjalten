@@ -47,13 +47,13 @@ export default function Kampanj() {
                 </p>
               </div>
               <div>
-                <Button text="Boka nu" url="/boka" />
+                <Button text="Få offert" url="/offert" />
               </div>
               <div>
                 <p className="text-sm text-gray-500">
                   * Alla priser är beräknade efter rutavdrag. Erbjudandet kan
                   inte kombineras med andra rabatter eller erbjudanden. Du
-                  behöver boka erbjudandet senast 31 oktober 2022
+                  behöver boka erbjudandet senast 31 oktober 2022.
                 </p>
               </div>
             </div>
