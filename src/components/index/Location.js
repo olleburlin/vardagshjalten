@@ -15,7 +15,7 @@ export default function Location() {
   }
   return (
     <div className="bg-white">
-      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-8 relative z-10">
+      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-4 relative z-10">
         <div>
           <SectionHeader text="Här finns vi" theme="dark" />
         </div>

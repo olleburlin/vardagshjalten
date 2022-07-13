@@ -6,7 +6,7 @@ import SectionHeader from "../common/SectionHeader"
 export default function Kampanj() {
   return (
     <div className="bg-white">
-      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 py-8 md:py-16 space-y-8 ">
+      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 py-8 md:py-16 space-y-4 ">
         <div className="flex  flex-col lg:flex-row items-start gap-8 md:gap-16 my-8 w-full">
           <div className="w-full lg:w-1/2 order-last lg:order-first">
             {" "}
