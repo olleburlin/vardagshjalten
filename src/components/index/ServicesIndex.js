@@ -2,13 +2,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Button from "../common/Button"
-import SectionHeader from "../common/SectionHeader"
 import Link from "../common/Link"
 
 export default function ServicesIndex() {
   const data = useStaticQuery(graphql`
     {
-      allWpTjanst(limit: 3) {
+      allWpTjanst(filter: { synlighet: { visaPaFramsida: { eq: true } } }) {
         nodes {
           title
           uri
