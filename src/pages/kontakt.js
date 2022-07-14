@@ -60,7 +60,7 @@ function Person({ person }) {
         <div className="">
           <a href={`mailto:${epostPerson}`}>{epostPerson}</a>
         </div>
-        <div>{telefonPerson}</div>
+        {/* <div>{telefonPerson}</div> */}
       </div>
     </div>
   )

@@ -93,6 +93,25 @@ export default function ContactForm() {
             </label>
           </div>
         </div>
+        <div className="form-group">
+          <label htmlFor="Tjänst">
+            Tjänst
+            <select
+              name="Tjänst"
+              className="bg-secondary/10 block mt-2 w-full p-4 text-black appearance-none"
+            >
+              <option value="">--Välj--</option>
+              <option value="Hemstädning">Hemstädning</option>
+              <option value="Storstädning">Storstädning</option>
+              <option value="Flyttstädning">Flyttstädning</option>
+              <option value="Fönsterputs">Fönsterputs</option>
+              <option value="Trädgårdsarbete">Trädgårdsarbete</option>
+              <option value="Fastighetsskötsel">Fastighetsskötsel</option>
+              <option value="Kontorsstäd">Kontorsstäd</option>
+              <option value="Annat">Annat</option>{" "}
+            </select>
+          </label>
+        </div>
         <div className="form-group flex flex-row gap-4 items-center md:items-end ">
           <input type="checkbox" name="Samtycke" />
           <label htmlFor="Samtycke" className="leading-none ">

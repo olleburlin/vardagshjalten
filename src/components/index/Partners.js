@@ -48,7 +48,10 @@ export default function Partners() {
           </div>
           <div>
             <div className="inline-block">
-              <Button text="Läs mer" />
+              <Button
+                text="Läs mer"
+                url="/tjanster/hemstadning-som-loneforman/"
+              />
             </div>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-10 gap-8 items-center ">
