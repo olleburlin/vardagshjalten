@@ -34,9 +34,12 @@ export default function Hero() {
           />
         </div>
         <div className="relative w-full h-full inset-x-0 flex items-center justify-start">
-          <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-8">
-            <h1 className="text-4xl md:text-8xl leading-tight font-bold">
-              Hinner du inte med? <br /> Prioritera din tid!
+          <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-8 ">
+            <h1 className="text-4xl md:text-8xl  font-bold">
+              <span className="leading-snug">
+                Hem- &amp; företagsstäd. <br />
+                Trygghet, kvalitet &amp; omtanke.
+              </span>
             </h1>
             {/* <p className="text-2xl md:text-5xl font-bold leading-normal md:leading-relaxed">
               Vardagshjälten är städbolaget med helhetslösningar
