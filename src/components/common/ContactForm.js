@@ -3,7 +3,11 @@ import React from "react"
 export default function ContactForm() {
   return (
     <div>
-      <form action="/boka" className="form space-y-8">
+      <form
+        action="https://getform.io/f/2afce328-f343-4e10-87bf-b19f23862cf2"
+        method="POST"
+        className="form space-y-8"
+      >
         <div className="grid md:grid-cols-2 gap-8">
           <div className="form-group">
             <label htmlFor="Namn">
