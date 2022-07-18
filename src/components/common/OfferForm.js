@@ -3,7 +3,11 @@ import React from "react"
 export default function OfferForm() {
   return (
     <div>
-      <form action="/boka" className="form space-y-8">
+      <form
+        action="https://getform.io/f/89642ea4-dafe-4b8e-a971-277929f61166"
+        method="POST"
+        className="form space-y-8"
+      >
         <div className="grid md:grid-cols-2 gap-8">
           <div className="form-group">
             <label htmlFor="Namn">
@@ -80,7 +84,7 @@ export default function OfferForm() {
           </label>
         </div>
         <div className="form-group flex flex-row gap-4 items-center md:items-end ">
-          <input type="checkbox" name="Samtycke" />
+          <input type="checkbox" name="Samtycke" required />
           <label htmlFor="Samtycke" className="leading-none ">
             Samtycker till att mina personuppgifter behandlas enligt
             integritetspolicyn.

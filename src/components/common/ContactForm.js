@@ -118,7 +118,7 @@ export default function ContactForm() {
           </label>
         </div>
         <div className="form-group flex flex-row gap-4 items-center md:items-end ">
-          <input type="checkbox" name="Samtycke" />
+          <input type="checkbox" name="Samtycke" required />
           <label htmlFor="Samtycke" className="leading-none ">
             Samtycker till att mina personuppgifter behandlas enligt
             integritetspolicyn.
