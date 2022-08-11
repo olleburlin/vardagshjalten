@@ -9,7 +9,7 @@ function SocialLinks({ fill }) {
           url: `https://www.instagram.com/vardagshjalten_foretag/`,
         },
         {
-          url: `https://www.facebook.com/VardagshjaltenSkane/`,
+          url: `https://www.facebook.com/VardagshjaltenAB/`,
         },
         {
           url: `https://www.linkedin.com/company/vardagshjälten-skåne-ab/`,
