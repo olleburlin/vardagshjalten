@@ -9,19 +9,19 @@ export default function HTML(props) {
           type="text/javascript"
           src="https://adsby.bidtheatre.com/js/asx_track.min.js"
         ></script>
-        <script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
     asxtrack.config = {
       segmentId: 8598
   };
 
   asxtrack.callSegment();
         `,
-            }}
-          />
-        </script>
+          }}
+        />
+
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
