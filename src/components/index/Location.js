@@ -1,10 +1,24 @@
 import React from "react"
 import SectionHeader from "../common/SectionHeader"
-
+import { useStaticQuery, graphql } from "gatsby"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
 import L from "leaflet"
 import icon from "../../images/icon.svg"
+
 export default function Location() {
+  const data = useStaticQuery(graphql`
+    {
+      wpPage(databaseId: { eq: 40 }) {
+        id
+        harFinnsVi {
+          rubrikLocation
+          textLocation
+        }
+      }
+    }
+  `)
+  const { rubrikLocation, textLocation } = data.wpPage.harFinnsVi
+
   if (typeof window !== "undefined") {
     var myIcon = L.icon({
       iconUrl: icon,
@@ -22,21 +36,11 @@ export default function Location() {
 
         <div className="flex  flex-col xl:flex-row gap-4 md:gap-8 my-8 w-full">
           <div className="w-full flex flex-col justify-center space-y-8 text-xl">
-            <p className="text-3xl md:text-7xl font-bold">
-              Vi utför våra tjänster i följande orter med omnejd
-            </p>
-            <p>
-              Vi brukar säga att vi är verksamma på den Skånska västkusten,
-              någonstans mellan Båstad-Trelleborg med några avstickare mot
-              Österlen. Vårt huvudkontor ligger i Landskrona och vi är verksamma
-              i över 35 orter i Skåne.
-            </p>
-            <p className="">
-              Båstad, Ängelholm, Höganäs, Helsingborg, Bjuv, Klippan,
-              Landskrona, Svalöv, Eslöv, Löddeköpinge, Kävlinge, Lomma, Bjärred,
-              Lund, Staffanstorp, Arlöv, Svedala, Malmö, Vellinge, Trelleborg,
-              Skurup &amp; Ystad.
-            </p>
+            <p className="text-3xl md:text-7xl font-bold">{rubrikLocation}</p>
+            <div
+              dangerouslySetInnerHTML={{ __html: textLocation }}
+              className="wp-content"
+            />
           </div>
 
           <div className="w-full  h-[60vh] md:h-[60vh] ">

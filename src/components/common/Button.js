@@ -3,7 +3,7 @@ import Link from "./Link"
 
 export default function Button({ text, theme, url }) {
   return (
-    <Link to={url}>
+    <Link to={url} title={text}>
       <div
         className={`${
           theme === "light"
