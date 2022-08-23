@@ -1,24 +1,36 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Button from "../common/Button"
-import SectionHeader from "../common/SectionHeader"
+import { useStaticQuery, graphql } from "gatsby"
+
 export default function Rekommendera() {
+  const data = useStaticQuery(graphql`
+    {
+      wpPage(databaseId: { eq: 40 }) {
+        id
+        rekommendationer {
+          knapptextRek
+          rubrikRek
+          underrubrikRek
+        }
+      }
+    }
+  `)
+  const { knapptextRek, rubrikRek, underrubrikRek } =
+    data.wpPage.rekommendationer
   return (
     <div className="relative">
       <div className="relative bg-primary z-10 py-8 md:py-16 overflow-hidden">
         <div className=" relative z-20 max-w-screen-2xl mx-auto container px-4 md:px-8">
           <div className="flex flex-col gap-4 md">
-            <h3 className="text-secondary">Rekommendationer</h3>
+            <h3 className="text-secondary">{rubrikRek}</h3>
             <div className="space-y-8 leading-normal">
               <p className="text-2xl md:text-7xl text-white font-bold leading-normal">
-                <span className="leading-snug">
-                  Rekommendera oss, vi bjuder på halva städkostnaden vid nästa
-                  tillfälle
-                </span>
+                <span className="leading-snug">{underrubrikRek}</span>
               </p>
               <div>
                 <div className="inline-block">
-                  <Button text="Rekommendera" url="/boka" theme="light" />
+                  <Button text={knapptextRek} url="/boka" theme="light" />
                 </div>
               </div>
             </div>
