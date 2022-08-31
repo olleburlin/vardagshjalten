@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "../common/Button"
 import FeaturedImagePage from "../common/FeaturedImagePage"
 import PageHeader from "../common/PageHeader"
 import Includes from "./Includes"
@@ -61,8 +62,11 @@ export default function SingleKurs({ page }) {
             </div>
           ) : (
             <div className="md:col-span-1">
-              <div className="bg-primary/20 p-8 md:text-2xl">
-                Vi skräddarsyr efter dina behov
+              <div className="bg-primary/20 p-8 md:text-2xl space-y-4">
+                <div>Vi skräddarsyr efter dina behov</div>
+                <div className="inline-block">
+                  <Button text="Boka möte" theme="dark" url="/boka" />
+                </div>
               </div>
             </div>
           )}
