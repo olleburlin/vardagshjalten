@@ -113,6 +113,7 @@ export default function ContactForm() {
               <option value="Trädgårdsarbete">Trädgårdsarbete</option>
               <option value="Fastighetsskötsel">Fastighetsskötsel</option>
               <option value="Kontorsstäd">Kontorsstäd</option>
+              <option value="Kontorsstäd">Byggstäd</option>
               <option value="Annat">Annat</option>{" "}
             </select>
           </label>
