@@ -6,7 +6,7 @@ function SocialLinks({ fill }) {
     <nav className="">
       {[
         {
-          url: `https://www.instagram.com/vardagshjalten_foretag/`,
+          url: `https://www.instagram.com/vardagshjaltenab/`,
         },
         {
           url: `https://www.facebook.com/VardagshjaltenAB/`,
