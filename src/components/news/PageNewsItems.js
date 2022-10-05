@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function PageNewsItems({ context }) {
   const data = useStaticQuery(graphql`
     {
-      allWpPost(sort: { order: ASC, fields: date }) {
+      allWpPost(sort: { order: DESC, fields: date }) {
         nodes {
           uri
           title
