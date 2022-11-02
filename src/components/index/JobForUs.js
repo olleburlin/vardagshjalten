@@ -22,7 +22,7 @@ export default function JobForUs() {
     <div className="bg-secondary  text-third">
       <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 pt-16 pb-16  space-y-4">
         <div className="grid md:grid-cols-6 gap-8 items-center justify-center  -pt-8">
-          <div className="col-span-4 space-y-8">
+          <div className="col-span-3 space-y-8">
             <div>
               <SubHeader text={rubrikJobb} theme="light" />
             </div>
@@ -33,7 +33,7 @@ export default function JobForUs() {
               />{" "}
             </div>
           </div>
-          <div className="col-span-4 md:col-span-2 flex flex-row gap-16 items-center p-4">
+          <div className="col-span-4 md:col-span-3 flex flex-row gap-16 items-center p-4">
             <div className="flex-1 p-4">
               <StaticImage src="../../images/gasell2.png" />
             </div>
