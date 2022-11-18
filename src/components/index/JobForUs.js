@@ -38,7 +38,7 @@ export default function JobForUs() {
               <StaticImage src="../../images/gasell2.png" />
             </div>
             <div className="flex-1 p-4">
-              <StaticImage src="../../images/foretagsvan.png" />
+              <StaticImage src="../../images/foretagsvan2022.png" />
             </div>
           </div>
         </div>
