@@ -62,7 +62,7 @@ export default function Kampanj() {
                 />
               </div>
               <div>
-                <Button text="Få offert" url="/offert" />
+                <Button text="Om oss" url="/om-oss" />
               </div>
               <div>
                 <p className="text-sm text-gray-500">

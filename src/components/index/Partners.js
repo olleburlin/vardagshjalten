@@ -43,7 +43,7 @@ export default function Partners() {
           <div>
             <p className="text-3xl md:text-6xl font-bold relative z-10">
               Vid ett samarbete med oss erbjuder vi alla era anställda 10%
-              rabatt på hemstädning
+              rabatt på hemstädning.
             </p>
           </div>
           <div>
