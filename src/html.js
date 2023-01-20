@@ -5,6 +5,23 @@ export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
+        <script
+          type="text/javascript"
+          src="https://adsby.bidtheatre.com/js/asx_track.min.js"
+        ></script>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+    asxtrack.config = {
+      segmentId: 8598
+  };
+
+  asxtrack.callSegment();
+        `,
+          }}
+        />
+
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
