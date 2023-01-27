@@ -31,6 +31,7 @@ function Layout({ children, isHome }) {
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>`
+
   return (
     <div className="md:min-h-screen antialiased relative  leading-relaxed text-secondary">
       <div className="flex flex-col md:flex-row md:h-full w-full relative">
