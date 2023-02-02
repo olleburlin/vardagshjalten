@@ -7,6 +7,7 @@ export default function JobForm() {
         action="https://getform.io/f/19ade4f5-7531-4b97-904e-c6e0b8cfac2e"
         method="POST"
         className="form space-y-8"
+        enctype="multipart/form-data"
       >
         <div className="grid md:grid-cols-2 gap-8">
           <div className="form-group">
@@ -62,14 +63,20 @@ export default function JobForm() {
               />
             </label>
           </div>
-          <div></div>
-          <div className="form-group ">
+
+          <div className="form-group col-span-2">
             <p>Körkort*</p>
             <div className="flex flex-row gap-2">
               <input id="ja" type="radio" name="License" value="Ja" required />
               <label htmlFor="ja">Ja</label>
               <input id="nej" type="radio" name="License" value="Nej" />
               <label htmlFor="nej">Nej</label>
+            </div>
+          </div>
+          <div className="form-group ">
+            <p>Ladda upp CV</p>
+            <div className="flex flex-row gap-2">
+              <input type="file" name="cv" />
             </div>
           </div>
         </div>
