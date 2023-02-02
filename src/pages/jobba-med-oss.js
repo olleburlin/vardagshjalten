@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import FeaturedImagePage from "../components/common/FeaturedImagePage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import JobForm from "../components/common/JobForm"
 
 export default function JobbaMedOssPage({ data }) {
