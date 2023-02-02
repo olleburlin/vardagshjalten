@@ -43,7 +43,7 @@ export default function JobForUs() {
           </div>
         </div>
         <div className="inline-block">
-          <Button text="Lediga jobb" url="https://careers.vardagshjalten.se/" />
+          <Button text="Ansök" url="/jobba-med-oss" />
         </div>
       </div>
     </div>
