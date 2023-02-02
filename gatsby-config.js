@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://cms.vardagshjalten.se/graphql",
+        url: "https://cms.vardagshjalten.se/graphql",
       },
     },
     `gatsby-plugin-image`,
