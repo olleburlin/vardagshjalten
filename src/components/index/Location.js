@@ -46,8 +46,8 @@ export default function Location() {
           <div className="w-full  h-[60vh] md:h-[60vh] ">
             {useHasMounted && (
               <MapContainer
-                center={[55.8385498, 13.2839836]}
-                zoom={8}
+                center={[56.2524172, 12.8313749]}
+                zoom={7}
                 style={{ height: "100%" }}
               >
                 <TileLayer
@@ -125,6 +125,12 @@ export default function Location() {
                 </Marker>
                 <Marker position={[56.6706811, 12.8280381]} icon={myIcon}>
                   <Popup>Halmstad</Popup>
+                </Marker>
+                <Marker position={[56.8985315, 12.4604954]} icon={myIcon}>
+                  <Popup>Falkenberg</Popup>
+                </Marker>
+                <Marker position={[57.1094122, 12.2177269]} icon={myIcon}>
+                  <Popup>Varberg</Popup>
                 </Marker>
               </MapContainer>
             )}
