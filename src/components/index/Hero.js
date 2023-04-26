@@ -35,7 +35,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="relative w-full h-full inset-x-0 flex flex-col lg:flex-row items-center justify-start">
+        <div className="relative w-full h-full inset-x-0 flex flex-col lg:flex-row items-center justify-center lg:justify-start">
           <div className="lg:ml-24 text-white space-y-4 md:space-y-8 p-4 ">
             <h1 className="text-4xl md:text-6xl text-center lg:text-left lg:text-7xl xl:text-8xl  font-bold">
               <span className="leading-snug">
@@ -51,14 +51,14 @@ export default function Hero() {
               <Button text="Boka möte" theme="dark" url="/boka" />
             </div>
           </div>
-          <div className="flex-none self-center lg:self-start w-1/2 lg:w-1/3 lg:-mx-8">
+          {/* <div className="flex-none self-center lg:self-start w-1/2 lg:w-1/3 lg:-mx-8 px-8 lg:px-0">
             {" "}
             <Link to="/boka">
               <div className="w-full">
                 <StaticImage src="../../images/halland.png" />
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
