@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import Button from "../common/Button"
+import Link from "../common/Link"
 export default function Hero() {
   const data = useStaticQuery(graphql`
     {
@@ -33,14 +34,10 @@ export default function Hero() {
             alt="Hero Image"
           />
         </div>
-        <div className="absolute -right-8 -bottom-4 lg:right-0 lg:bottom-0">
-          <div className="w-56 lg:w-96">
-            <StaticImage src="../../images/halland.png" />
-          </div>
-        </div>
-        <div className="relative w-full h-full inset-x-0 flex items-center justify-start">
-          <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-8 ">
-            <h1 className="text-4xl md:text-8xl  font-bold">
+
+        <div className="relative w-full h-full inset-x-0 flex flex-col lg:flex-row items-center justify-start">
+          <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-4 ">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl  font-bold">
               <span className="leading-snug">
                 Hem- &amp; företagsstäd. <br />
                 Trygghet, kvalitet &amp; omtanke.
@@ -53,6 +50,14 @@ export default function Hero() {
             <div className=" md:text-inherit">
               <Button text="Boka möte" theme="dark" url="/boka" />
             </div>
+          </div>
+          <div className="flex-none self-end lg:self-start w-1/2 lg:w-1/3 lg:-mx-8">
+            {" "}
+            <Link to="/boka">
+              <div className="w-full">
+                <StaticImage src="../../images/halland.png" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
