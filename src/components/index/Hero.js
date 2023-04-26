@@ -33,6 +33,11 @@ export default function Hero() {
             alt="Hero Image"
           />
         </div>
+        <div className="absolute -right-8 -bottom-4 lg:right-0 lg:bottom-0">
+          <div className="w-56 lg:w-96">
+            <StaticImage src="../../images/halland.png" />
+          </div>
+        </div>
         <div className="relative w-full h-full inset-x-0 flex items-center justify-start">
           <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-8 ">
             <h1 className="text-4xl md:text-8xl  font-bold">

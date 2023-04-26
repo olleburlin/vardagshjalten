@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex-1 text-lg">
           Landskrona, Huvudkontor:
           <br />
-          Telefon: 0418-499009
+          Telefon: 010-1470717
           <br />
           Email: info@vardagshjalten.se
         </div>
