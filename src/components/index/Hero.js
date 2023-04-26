@@ -36,8 +36,8 @@ export default function Hero() {
         </div>
 
         <div className="relative w-full h-full inset-x-0 flex flex-col lg:flex-row items-center justify-start">
-          <div className="md:ml-24 text-white space-y-4 md:space-y-8 p-4 ">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl  font-bold">
+          <div className="lg:ml-24 text-white space-y-4 md:space-y-8 p-4 ">
+            <h1 className="text-4xl md:text-6xl text-center lg:text-left lg:text-7xl xl:text-8xl  font-bold">
               <span className="leading-snug">
                 Hem- &amp; företagsstäd. <br />
                 Trygghet, kvalitet &amp; omtanke.
@@ -47,11 +47,11 @@ export default function Hero() {
               Vardagshjälten är städbolaget med helhetslösningar
               <br /> för hem, lokal eller flytt.
             </p> */}
-            <div className=" md:text-inherit">
+            <div className=" md:text-inherit text-center lg:text-left">
               <Button text="Boka möte" theme="dark" url="/boka" />
             </div>
           </div>
-          <div className="flex-none self-end lg:self-start w-1/2 lg:w-1/3 lg:-mx-8">
+          <div className="flex-none self-center lg:self-start w-1/2 lg:w-1/3 lg:-mx-8">
             {" "}
             <Link to="/boka">
               <div className="w-full">
