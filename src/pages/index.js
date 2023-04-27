@@ -14,6 +14,7 @@ import ServicesIndex from "../components/index/ServicesIndex"
 import Testimonials from "../components/index/Testimonials"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Dialog from "../components/common/Dialog"
 
 const IndexPage = () => (
   <Layout>
@@ -30,6 +31,7 @@ const IndexPage = () => (
 
     <JobForUs />
     <Kampanj />
+    <Dialog />
   </Layout>
 )
 
