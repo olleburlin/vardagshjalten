@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Vardagshjälten`,
-    description: `Räddar din dag. Städning med nöjd-kund-garanti`,
+    description: `Städning med nöjd-kund-garanti`,
     author: `@olleburlin`,
   },
   flags: {
