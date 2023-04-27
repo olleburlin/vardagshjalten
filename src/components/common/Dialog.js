@@ -40,40 +40,33 @@ export default function MyModal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-[#ebfddc] p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-primary"
+                    className="text-lg lg:text-2xl font-medium leading-6 text-primary"
                   >
                     Äntligen öppnar vi i Halland! 🎉
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-base text-secondary">
-                      Vi har vuxit rejält de sista åren och känner att det är
-                      dags att ta nya kliv utanför de skånska gränserna. Idag
-                      har vi kunder vid gränsen till Halland och förlänger nu
-                      vårt upptagningsområde längs med kusten. Vi kommer att
-                      utgå från Falkenberg där vi når orterna mellan Varberg och
-                      Halmstad.
-                      <br />
-                      <br />
+                  <div className="mt-4">
+                    <p className="text-base lg:text-xl text-secondary">
                       Vi har ett fantastiskt öppningserbjudande! Vi bjuder de
                       första 50 kunderna i Halland på första städtillfället.
+                      <br />
                     </p>
                   </div>
 
-                  <div className="mt-4">
+                  <div className="mt-6">
                     <div className="flex flex-col sm:flex-row gap-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent "
+                        className="inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm lg:text-lg font-medium text-white hover:bg-primary/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent "
                         onClick={() => navigate("/boka")}
                       >
                         Boka
                       </button>
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md border border-transparent bg-secondary/10 px-4 py-2 text-sm font-medium text-secondary hover:bg-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent focus-visible:ring-offset-2"
+                        className="inline-flex justify-center rounded-md border border-transparent bg-secondary/10 px-4 py-2 text-sm lg:text-lg font-medium text-secondary hover:bg-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent focus-visible:ring-offset-2"
                         onClick={closeModal}
                       >
                         Stäng
