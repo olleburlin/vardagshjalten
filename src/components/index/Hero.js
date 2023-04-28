@@ -43,22 +43,11 @@ export default function Hero() {
                 Trygghet, kvalitet &amp; omtanke.
               </span>
             </h1>
-            {/* <p className="text-2xl md:text-5xl font-bold leading-normal md:leading-relaxed">
-              Vardagshjälten är städbolaget med helhetslösningar
-              <br /> för hem, lokal eller flytt.
-            </p> */}
+
             <div className=" md:text-inherit text-center lg:text-left">
               <Button text="Boka möte" theme="dark" url="/boka" />
             </div>
           </div>
-          {/* <div className="flex-none self-center lg:self-start w-1/2 lg:w-1/3 lg:-mx-8 px-8 lg:px-0">
-            {" "}
-            <Link to="/boka">
-              <div className="w-full">
-                <StaticImage src="../../images/halland.png" />
-              </div>
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>
