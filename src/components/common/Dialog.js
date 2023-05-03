@@ -86,10 +86,10 @@ export default function MyModal() {
                       </button>
                     </div>
                     <Dialog.Title
-                      as="h3"
-                      className="text-xl lg:text-5xl font-bold leading-6 text-white uppercase"
+                      as="div"
+                      className="text-xl lg:text-5xl font-bold  text-white "
                     >
-                      {rubrikPopup}
+                      <div className="leading-normal">{rubrikPopup}</div>
                     </Dialog.Title>
                     <div className="">
                       <div className=" text-white">
@@ -104,7 +104,7 @@ export default function MyModal() {
                       <div className="flex flex-col sm:flex-row gap-4 lg:items-center lg:justify-center">
                         <button
                           type="button"
-                          className="uppercase inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm lg:text-lg font-medium text-white hover:bg-primary/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent "
+                          className="uppercase inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm lg:text-lg  text-white hover:bg-primary/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent "
                           onClick={() => navigate(lankKnappPopup)}
                         >
                           {textKnappPopup}

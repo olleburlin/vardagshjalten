@@ -3,6 +3,7 @@
 
 body {
   font-family: "Cabin", sans-serif;
+  font-weight: normal;
 }
 h1 {
   @apply text-2xl;
