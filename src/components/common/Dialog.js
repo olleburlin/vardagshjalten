@@ -92,7 +92,7 @@ export default function MyModal() {
                       <div className="leading-normal">{rubrikPopup}</div>
                     </Dialog.Title>
                     <div className="">
-                      <div className=" text-white">
+                      <div className=" text-white antialiased">
                         <div
                           dangerouslySetInnerHTML={{ __html: innehallPopup }}
                           className="wp-content"
