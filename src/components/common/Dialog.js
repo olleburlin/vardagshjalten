@@ -42,7 +42,7 @@ export default function MyModal() {
     <>
       {popup && visaPopup ? (
         <Transition appear show={isOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Dialog as="div" className="relative z-20" onClose={closeModal}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -52,7 +52,7 @@ export default function MyModal() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="fixed inset-0 bg-black bg-opacity-50" />
+              <div className="fixed inset-0 bg-teal-900/50" />
             </Transition.Child>
 
             <div className="fixed inset-0 overflow-y-auto">
@@ -66,15 +66,36 @@ export default function MyModal() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-secondary p-16 lg:p-24 align-middle shadow-xl transition-all text-center flex flex-col gap-8 lg:gap-12">
+                    <div className="text-white absolute top-0 right-0 p-4">
+                      <button
+                        className="focus:ring-transparent focus:outline-none"
+                        onClick={closeModal}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                     <Dialog.Title
-                      as="h3"
-                      className="text-lg lg:text-2xl font-medium leading-6 text-primary uppercase"
+                      as="div"
+                      className="text-xl lg:text-5xl font-medium  text-white "
                     >
-                      {rubrikPopup}
+                      <div className="leading-normal">{rubrikPopup}</div>
                     </Dialog.Title>
-                    <div className="mt-4">
-                      <div className="text-base lg:text-xl text-secondary">
+                    <div className="">
+                      <div className=" text-white antialiased">
                         <div
                           dangerouslySetInnerHTML={{ __html: innehallPopup }}
                           className="wp-content"
@@ -82,22 +103,22 @@ export default function MyModal() {
                       </div>
                     </div>
 
-                    <div className="mt-6">
-                      <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="">
+                      <div className="flex flex-col sm:flex-row gap-4 lg:items-center lg:justify-center">
                         <button
                           type="button"
-                          className="inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm lg:text-lg font-medium text-white hover:bg-primary/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent "
+                          className="uppercase inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm lg:text-lg  text-white hover:bg-primary/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent "
                           onClick={() => navigate(lankKnappPopup)}
                         >
                           {textKnappPopup}
                         </button>
-                        <button
+                        {/* <button
                           type="button"
-                          className="inline-flex justify-center rounded-md border border-transparent bg-secondary/10 px-4 py-2 text-sm lg:text-lg font-medium text-secondary hover:bg-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent focus-visible:ring-offset-2"
-                          onClick={closeModal}
+                          className="inline-flex justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm lg:text-lg font-medium text-secondary hover:bg-stone-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent focus-visible:ring-offset-2"
+                
                         >
                           Stäng
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </Dialog.Panel>
