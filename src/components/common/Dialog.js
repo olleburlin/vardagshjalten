@@ -68,7 +68,10 @@ export default function MyModal() {
                 >
                   <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-secondary p-16 lg:p-24 align-middle shadow-xl transition-all text-center flex flex-col gap-8 lg:gap-12">
                     <div className="text-white absolute top-0 right-0 p-4">
-                      <button onClick={closeModal}>
+                      <button
+                        className="focus:ring-transparent focus:outline-none"
+                        onClick={closeModal}
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -87,7 +90,7 @@ export default function MyModal() {
                     </div>
                     <Dialog.Title
                       as="div"
-                      className="text-xl lg:text-5xl font-bold  text-white "
+                      className="text-xl lg:text-5xl font-medium  text-white "
                     >
                       <div className="leading-normal">{rubrikPopup}</div>
                     </Dialog.Title>
