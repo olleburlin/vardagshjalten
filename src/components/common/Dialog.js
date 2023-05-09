@@ -90,7 +90,7 @@ export default function MyModal() {
                     </div>
                     <Dialog.Title
                       as="div"
-                      className="text-3xl lg:text-5xl font-bold  text-white "
+                      className="text-2xl lg:text-5xl font-bold  text-white "
                     >
                       <div className="leading-normal">{rubrikPopup}</div>
                     </Dialog.Title>
