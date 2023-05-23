@@ -14,9 +14,10 @@ export default function Footer() {
         <div className="flex-1 text-lg">
           Landskrona, Huvudkontor:
           <br />
-          Telefon: 010-1470717
+          Telefon: <a href="tel:+46101470717">010-1470717</a>
           <br />
-          Email: info@vardagshjalten.se
+          Email:{" "}
+          <a href="mailto:info@vardagshjalten.se">info@vardagshjalten.se</a>
         </div>
         <div className="flex-1 md:self-center">
           <div className="-ml-3">
