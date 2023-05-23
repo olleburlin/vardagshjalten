@@ -2,26 +2,18 @@ import React from "react"
 import PropTypes from "prop-types"
 
 export default function HTML(props) {
+  const gaTag = `<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5QM476F');</script>`
+
+  const gaTag2 = `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QM476F"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`
+
   return (
     <html {...props.htmlAttributes}>
       <head>
-        <script
-          type="text/javascript"
-          src="https://adsby.bidtheatre.com/js/asx_track.min.js"
-        ></script>
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-    asxtrack.config = {
-      segmentId: 8598
-  };
-
-  asxtrack.callSegment();
-        `,
-          }}
-        />
-
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
@@ -29,8 +21,10 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <div dangerouslySetInnerHTML={{ __html: gaTag }} />
       </head>
       <body {...props.bodyAttributes}>
+        <div dangerouslySetInnerHTML={{ __html: gaTag2 }} />
         {props.preBodyComponents}
         <div
           key={`body`}
