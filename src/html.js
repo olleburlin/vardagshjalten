@@ -32,6 +32,10 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+        <script
+          src="https://app.weply.chat/widget/95c21270014c75a1d8b02b6fe9d7f01c"
+          async
+        ></script>
       </body>
     </html>
   )
