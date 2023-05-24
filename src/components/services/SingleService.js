@@ -5,6 +5,7 @@ import PageHeader from "../common/PageHeader"
 import Includes from "./Includes"
 import IncludesNot from "./IncludesNot"
 import ServicesPrices from "./ServicesPrices"
+import { Map } from "../index/Location"
 // import Link from "../common/Link"
 
 export default function SingleKurs({ page }) {
@@ -15,6 +16,7 @@ export default function SingleKurs({ page }) {
     innefattarInte,
     priserTjanst,
     featuredImage,
+    databaseId,
   } = page
   const { information } = grundinfo
   const image = featuredImage?.node.localFile.childImageSharp
@@ -68,6 +70,11 @@ export default function SingleKurs({ page }) {
                   <Button text="Boka möte" theme="dark" url="/boka" />
                 </div>
               </div>
+            </div>
+          )}
+          {(databaseId === 9 || databaseId === 12) && (
+            <div className="w-full md:col-span-2 h-[60vh] relative z-10">
+              <Map />
             </div>
           )}
         </div>

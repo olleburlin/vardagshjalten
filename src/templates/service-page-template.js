@@ -22,6 +22,7 @@ export const query = graphql`
       title
       uri
       id
+      databaseId
       grundinfo {
         information
       }
