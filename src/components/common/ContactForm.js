@@ -109,8 +109,6 @@ export default function ContactForm() {
               <option value="Hemstädning">Hemstädning</option>
               <option value="Storstädning">Storstädning</option>
               <option value="Flyttstädning">Flyttstädning</option>
-              <option value="Fönsterputs">Fönsterputs</option>
-              <option value="Trädgårdsarbete">Trädgårdsarbete</option>
               <option value="Fastighetsskötsel">Fastighetsskötsel</option>
               <option value="Kontorsstäd">Kontorsstäd</option>
               <option value="Kontorsstäd">Byggstäd</option>
