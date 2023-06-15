@@ -50,6 +50,11 @@ export const query = graphql`
           punktInnefattarinte
         }
       }
+      kategoriTjanster {
+        nodes {
+          slug
+        }
+      }
       priserTjanst {
         extraText
         prisklass {

@@ -17,10 +17,19 @@ export default function SingleKurs({ page }) {
     priserTjanst,
     featuredImage,
     databaseId,
+    kategoriTjanster,
   } = page
   const { information } = grundinfo
   const image = featuredImage?.node.localFile.childImageSharp
+  const subCategories = kategoriTjanster.nodes
+  console.log(subCategories)
 
+  const isHemstad = subCategories => {
+    return subCategories.some(
+      subCategory => subCategory.slug === "landningssida-hemstad"
+    )
+  }
+  console.log(isHemstad(subCategories))
   return (
     <div className="flex flex-col items-center justify-start">
       <div className=" w-full relative bg-gradient-to-t bg-black">
@@ -72,11 +81,14 @@ export default function SingleKurs({ page }) {
               </div>
             </div>
           )}
-          {(databaseId === 9 || databaseId === 12) && (
+          {(databaseId === 9 ||
+            databaseId === 12 ||
+            isHemstad(subCategories)) && (
             <div className="w-full md:col-span-2 h-[60vh] relative z-10">
               <Map />
             </div>
           )}
+          {isHemstad(subCategories) && <div className="md:col-span-2"></div>}
         </div>
       </div>
     </div>

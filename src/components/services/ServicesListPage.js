@@ -14,6 +14,11 @@ export default function ServicesListPage() {
             ingressFramsidaTjanst
             kompletterandeInformationFramsida
           }
+          kategoriTjanster {
+            nodes {
+              slug
+            }
+          }
           featuredImage {
             node {
               localFile {
@@ -28,6 +33,15 @@ export default function ServicesListPage() {
     }
   `)
   const services = data.allWpTjanst.nodes
+
+  // create constant of the services array where kategoriTjanster.nodes.slug !== "landningssida-hemstad"
+
+  const filteredServices = services.filter(
+    service =>
+      service.kategoriTjanster.nodes
+        .map(node => node.slug)
+        .indexOf("landningssida-hemstad") === -1
+  )
 
   return (
     <div className="min-h-screen  flex flex-col items-center justify-start">
@@ -63,7 +77,7 @@ export default function ServicesListPage() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8 ">
-          {services.map((service, i) => {
+          {filteredServices.map((service, i) => {
             return <SingleServiceItem key={i} service={service} />
           })}
         </div>
