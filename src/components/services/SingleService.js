@@ -6,6 +6,7 @@ import Includes from "./Includes"
 import IncludesNot from "./IncludesNot"
 import ServicesPrices from "./ServicesPrices"
 import { Map } from "../index/Location"
+import HemstadLandingpagesMenu from "./HemstadLandingpagesMenu"
 // import Link from "../common/Link"
 
 export default function SingleKurs({ page }) {
@@ -88,8 +89,8 @@ export default function SingleKurs({ page }) {
               <Map />
             </div>
           )}
-          {isHemstad(subCategories) && <div className="md:col-span-2"></div>}
         </div>
+        {isHemstad(subCategories) && <HemstadLandingpagesMenu />}
       </div>
     </div>
   )
