@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import Button from "../common/Button"
 import Link from "../common/Link"
+import HeroMovie from "../common/HeroMovie"
 export default function Hero() {
   const data = useStaticQuery(graphql`
     {
@@ -28,11 +29,12 @@ export default function Hero() {
     <div className="h-[50vh] md:h-screen">
       <div className="h-full overflow-hidden relative">
         <div className="absolute h-full w-full bg-secondary">
-          <GatsbyImage
+          {/* <GatsbyImage
             image={getImage(img)}
             class="h-full w-full opacity-70"
             alt="Hero Image"
-          />
+          /> */}
+          <HeroMovie />
         </div>
 
         <div className="relative w-full h-full inset-x-0 flex flex-col lg:flex-row items-center justify-center lg:justify-start">
