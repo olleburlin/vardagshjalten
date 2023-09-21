@@ -21,8 +21,8 @@ export default function SellingPoints() {
   return (
     <div className="bg-secondary/10 text-secondary">
       <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 py-16 md:py-32 space-y-32">
-        <div className="grid lg:grid-cols-4 gap-4 md:gap-16">
-          {points?.slice(0, 4).map((sellingPoint, i) => {
+        <div className="grid lg:grid-cols-3 gap-4 md:gap-16">
+          {points?.slice(0, 6).map((sellingPoint, i) => {
             return (
               <SellingPoint key={i} index={i} sellingPoint={sellingPoint} />
             )
@@ -36,20 +36,26 @@ export default function SellingPoints() {
 function SellingPoint({ sellingPoint, index }) {
   const { titelSellingpoint, beskrivningSellingpoint } = sellingPoint
   return (
-    <div className="flex flex-col gap-4 text-xl">
-      <div className="w-16">
+    <div className="flex flex-row gap-8 text-xl ">
+      <div className="w-16 lg:w-20 flex-none">
         {index === 0 ? (
           <StarIcon />
         ) : index === 1 ? (
           <LockIcon />
         ) : index === 2 ? (
           <HeartIcon />
-        ) : (
+        ) : index === 3 ? (
           <CheckIcon />
-        )}
+        ) : index === 4 ? (
+          <ClockIcon />
+        ) : index === 5 ? (
+          <PhoneIcon />
+        ) : null}
       </div>
-      <div className="font-bold text-2xl">{titelSellingpoint}</div>
-      <div>{beskrivningSellingpoint}</div>
+      <div className="flex flex-col gap-2">
+        <div className="font-bold text-xl">{titelSellingpoint}</div>
+        <div className="text-base">{beskrivningSellingpoint}</div>
+      </div>
     </div>
   )
 }
@@ -247,6 +253,46 @@ function CheckIcon() {
           </g>
         </g>
       </switch>
+    </svg>
+  )
+}
+
+function PhoneIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      x="0"
+      y="0"
+      enableBackground="new 0 0 199.324 199.324"
+      version="1.1"
+      viewBox="0 0 199.324 199.324"
+      xmlSpace="preserve"
+    >
+      <circle cx="99.662" cy="99.662" r="99.662" fill="#8FC13A"></circle>
+      <path
+        fill="#FFF"
+        d="M129.666 31.081H69.658c-7.099 0-12.859 5.76-12.859 12.859v111.444c0 7.099 5.76 12.859 12.859 12.859h60.008c7.099 0 12.859-5.76 12.859-12.859V43.94c0-7.099-5.759-12.859-12.859-12.859zm-30.004 128.59c-4.742 0-8.573-3.831-8.573-8.573s3.831-8.573 8.573-8.573 8.573 3.831 8.573 8.573-3.831 8.573-8.573 8.573zm30.004-28.933a3.225 3.225 0 01-3.215 3.215H72.873a3.225 3.225 0 01-3.215-3.215V47.155a3.225 3.225 0 013.215-3.215h53.579a3.225 3.225 0 013.215 3.215v83.583z"
+      ></path>
+    </svg>
+  )
+}
+
+function ClockIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      x="0"
+      y="0"
+      enableBackground="new 0 0 171.478 171.478"
+      version="1.1"
+      viewBox="0 0 171.478 171.478"
+      xmlSpace="preserve"
+    >
+      <circle cx="85.739" cy="85.739" r="85.739" fill="#8FC13A"></circle>
+      <path
+        fill="#FFF"
+        d="M125.311 98.93H85.739a6.595 6.595 0 01-6.595-6.595V32.977a6.595 6.595 0 0113.19 0V85.74h32.977a6.595 6.595 0 010 13.19z"
+      ></path>
     </svg>
   )
 }

@@ -29,12 +29,12 @@ export default function Hero() {
     <div className="h-[50vh] md:h-screen">
       <div className="h-full overflow-hidden relative">
         <div className="absolute h-full w-full bg-secondary">
-          {/* <GatsbyImage
+          <GatsbyImage
             image={getImage(img)}
-            class="h-full w-full opacity-70"
+            class="h-full w-full opacity-30"
             alt="Hero Image"
-          /> */}
-          <HeroMovie />
+          />
+          {/* <HeroMovie /> */}
         </div>
 
         <div className="relative w-full h-full inset-x-0 flex flex-col lg:flex-row items-center justify-center lg:justify-start">
