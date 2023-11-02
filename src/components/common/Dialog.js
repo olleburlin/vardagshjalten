@@ -2,6 +2,7 @@ import { Dialog, Transition } from "@headlessui/react"
 import React, { Fragment, useState } from "react"
 import { navigate } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function MyModal() {
   const data = useStaticQuery(graphql`
@@ -14,6 +15,13 @@ export default function MyModal() {
           rubrikPopup
           textKnappPopup
           visaPopup
+          bildPopup {
+            localFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
         }
       }
     }
@@ -36,8 +44,9 @@ export default function MyModal() {
     rubrikPopup,
     textKnappPopup,
     visaPopup,
+    bildPopup,
   } = popup
-
+  console.log(bildPopup)
   return (
     <>
       {popup && visaPopup ? (
@@ -66,7 +75,13 @@ export default function MyModal() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-secondary p-16 lg:p-24 align-middle shadow-xl transition-all text-center flex flex-col gap-8 lg:gap-12">
+                  <Dialog.Panel className="w-full max-w-3xl aspect-[4/3] transform overflow-hidden  bg-secondary p-16 lg:p-24 align-middle shadow-xl transition-all text-center flex flex-col gap-8 lg:gap-12">
+                    <div className="absolute  top-0 left-0 h-full w-full">
+                      <GatsbyImage
+                        image={getImage(bildPopup.localFile.childImageSharp)}
+                        class="h-full w-full"
+                      />
+                    </div>
                     <div className="text-white absolute top-0 right-0 p-4">
                       <button
                         className="focus:ring-transparent focus:outline-none"
@@ -88,23 +103,23 @@ export default function MyModal() {
                         </svg>
                       </button>
                     </div>
-                    <Dialog.Title
+                    {/* <Dialog.Title
                       as="div"
                       className="text-2xl lg:text-5xl font-bold  text-white "
                     >
                       <div className="leading-normal">{rubrikPopup}</div>
-                    </Dialog.Title>
-                    <div className="">
+                    </Dialog.Title> */}
+                    {/* <div className="">
                       <div className=" text-white antialiased">
                         <div
                           dangerouslySetInnerHTML={{ __html: innehallPopup }}
                           className="wp-content"
                         />
                       </div>
-                    </div>
+                    </div> */}
 
-                    <div className="">
-                      <div className="flex flex-col sm:flex-row gap-4 lg:items-center lg:justify-center">
+                    <div className="top-0 left-0 w-full flex justify-center items-end z-10 h-full  absolute">
+                      <div className="flex flex-col pb-8  sm:flex-row gap-4 lg:items-center lg:justify-center">
                         <button
                           type="button"
                           className="uppercase inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm lg:text-lg  text-white hover:bg-primary/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-transparent "
