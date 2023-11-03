@@ -31,7 +31,7 @@ const IndexPage = () => (
 
     <JobForUs />
     <Kampanj />
-    <Dialog />
+    {/* <Dialog /> */}
   </Layout>
 )
 

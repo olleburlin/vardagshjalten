@@ -39,7 +39,7 @@ export default function ServicesIndex() {
         </div>
         <div className="pt-8 md:pt-16 flex">
           <div className="inline-block">
-            <Button text="Visa alla &rarr;" url="/tjanster" />
+            <Button text="Fler tjänster &rarr;" url="/tjanster" />
           </div>
         </div>
       </div>

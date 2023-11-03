@@ -47,7 +47,7 @@ export default function Hero() {
             </h1>
 
             <div className=" md:text-inherit text-center lg:text-left">
-              <Button text="Boka möte" theme="dark" url="/boka" />
+              <Button text="Våra tjänster" theme="dark" url="/tjanster" />
             </div>
           </div>
         </div>
