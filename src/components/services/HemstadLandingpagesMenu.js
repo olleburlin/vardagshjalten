@@ -23,8 +23,8 @@ export default function HemstadLandingpagesMenu() {
   const landingpages = data.allWpTjanst.nodes
 
   return (
-    <div className="flex flex-col gap-4">
-      <h5>Fler städer:</h5>
+    <div className="flex flex-col gap-4 max-w-4xl">
+      <h5>Hemstädning finns i dessa städer:</h5>
       <ul className="flex flex-row flex-wrap gap-4">
         {landingpages.map(page => {
           return <Landingpage key={page.id} page={page} />
