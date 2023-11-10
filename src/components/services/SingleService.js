@@ -90,8 +90,9 @@ export default function SingleKurs({ page }) {
             </div>
           )}
         </div>
-        {isHemstad(subCategories) ||
-          (databaseId === 9 && <HemstadLandingpagesMenu />)}
+        {(isHemstad(subCategories) || databaseId === 9) && (
+          <HemstadLandingpagesMenu />
+        )}
       </div>
     </div>
   )
