@@ -142,15 +142,15 @@ export function Map() {
           <Marker position={[55.4347913, 13.7992975]} icon={myIcon}>
             <Popup>Ystad</Popup>
           </Marker>
-          <Marker position={[56.6706811, 12.8280381]} icon={myIcon}>
+          {/* <Marker position={[56.6706811, 12.8280381]} icon={myIcon}>
             <Popup>Halmstad</Popup>
-          </Marker>
-          <Marker position={[56.8985315, 12.4604954]} icon={myIcon}>
+          </Marker> */}
+          {/* <Marker position={[56.8985315, 12.4604954]} icon={myIcon}>
             <Popup>Falkenberg</Popup>
-          </Marker>
-          <Marker position={[57.1094122, 12.2177269]} icon={myIcon}>
+          </Marker> */}
+          {/* <Marker position={[57.1094122, 12.2177269]} icon={myIcon}>
             <Popup>Varberg</Popup>
-          </Marker>
+          </Marker> */}
         </MapContainer>
       )}
     </>
