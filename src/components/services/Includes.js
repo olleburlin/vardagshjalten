@@ -15,7 +15,7 @@ export default function Includes({ innefattar, service }) {
 
   return (
     <div className="space-y-4 md:space-y-8">
-      <h2>Vad ingår?</h2>
+      <h3>Vad ingår?</h3>
       <div>
         <div dangerouslySetInnerHTML={{ __html: fritext }} />
       </div>
