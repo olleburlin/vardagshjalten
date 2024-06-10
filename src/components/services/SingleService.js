@@ -30,6 +30,12 @@ export default function SingleKurs({ page }) {
       subCategory => subCategory.slug === "landningssida-hemstad"
     )
   }
+  const isKontorstad = subCategories => {
+    return subCategories.some(
+      subCategory => subCategory.slug === "landningssida-kontorsstad"
+    )
+  }
+
   console.log(isHemstad(subCategories))
   return (
     <div className="flex flex-col items-center justify-start">
@@ -84,6 +90,7 @@ export default function SingleKurs({ page }) {
           )}
           {(databaseId === 9 ||
             databaseId === 12 ||
+            isKontorstad(subCategories) ||
             isHemstad(subCategories)) && (
             <div className="w-full md:col-span-2 h-[60vh] relative z-10">
               <Map />
