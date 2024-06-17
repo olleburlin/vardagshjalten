@@ -36,11 +36,21 @@ export default function ServicesListPage() {
 
   // create constant of the services array where kategoriTjanster.nodes.slug !== "landningssida-hemstad"
 
+  const isHemstad = subCategories => {
+    return subCategories.some(
+      subCategory => subCategory.slug === "landningssida-hemstad"
+    )
+  }
+  const isKontorstad = subCategories => {
+    return subCategories.some(
+      subCategory => subCategory.slug === "landningssida-kontorsstad"
+    )
+  }
+
   const filteredServices = services.filter(
     service =>
-      service.kategoriTjanster.nodes
-        .map(node => node.slug)
-        .indexOf("landningssida-hemstad") === -1
+      !isHemstad(service.kategoriTjanster.nodes) &&
+      !isKontorstad(service.kategoriTjanster.nodes)
   )
 
   return (
